@@ -5,13 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af86d6e4-7574-4848-bb5f-f0d683e2e4d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/controller/SysLogLoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/convert/SysLogLoginConvert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/event/AuthenticationEvents.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/query/SysLogLoginQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-blz/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-blz/src/main/java/com/litao/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-blz/src/main/java/com/litao/controller/NoticeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-blz/src/main/java/com/litao/convert/NoticeConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-blz/src/main/java/com/litao/dao/NoticeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-blz/src/main/java/com/litao/entity/NoticeEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-blz/src/main/java/com/litao/query/NoticeQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-blz/src/main/java/com/litao/service/NoticeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-blz/src/main/java/com/litao/service/impl/NoticeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-blz/src/main/java/com/litao/vo/NoticeVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-blz/src/main/resources/mapper/NoticeDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/SysLogLoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/SysLogLoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysLogLoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysLogLoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +118,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682244541744</updated>
-      <workItem from="1682244548056" duration="14307000" />
+      <workItem from="1682244548056" duration="15333000" />
     </task>
     <servers />
   </component>

@@ -19,6 +19,7 @@
         <module>admin-base</module>
         <module>admin-core</module>
         <module>admin-server</module>
+        <module>admin-blz</module>
     </modules>
 
     <properties>

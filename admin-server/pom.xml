@@ -26,6 +26,12 @@
         </dependency>
 
         <dependency>
+            <groupId>com.litao</groupId>
+            <artifactId>admin-blz</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>

@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af86d6e4-7574-4848-bb5f-f0d683e2e4d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/convert/SysUserConvert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-server/src/main/java/com/litao/ServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-server/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-server/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-server/src/main/resources/application-test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-server/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-server/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/dao/SysUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/dao/SysUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/SysAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/SysAuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/SysUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/SysUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysAuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysAuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysUserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysUserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -58,6 +62,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "D:/WEBIDEA/admin-template/admin-core/src/main/resources/mapper",
@@ -86,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682244541744</updated>
-      <workItem from="1682244548056" duration="8148000" />
+      <workItem from="1682244548056" duration="9324000" />
     </task>
     <servers />
   </component>

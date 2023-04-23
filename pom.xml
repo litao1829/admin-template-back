@@ -18,6 +18,7 @@
     <modules>
         <module>admin-base</module>
         <module>admin-core</module>
+        <module>admin-server</module>
     </modules>
 
     <properties>

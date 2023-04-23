@@ -17,6 +17,7 @@
     <description>多模块API模块项目父工程</description>
     <modules>
         <module>admin-base</module>
+        <module>admin-core</module>
     </modules>
 
     <properties>

@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af86d6e4-7574-4848-bb5f-f0d683e2e4d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/mybatis/a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/mybatis/config/MybatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/mybatis/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/mybatis/handler/FieldMetaObjectHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-core/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-core/src/main/resources/auth.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/security/config/PasswordConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/security/config/PasswordConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/security/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/security/exception/SecurityAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/security/exception/SecurityAuthenticationEntryPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/security/filter/AuthenticationTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/security/filter/AuthenticationTokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,8 +64,8 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15429688",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   }
@@ -81,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682244541744</updated>
-      <workItem from="1682244548056" duration="4481000" />
+      <workItem from="1682244548056" duration="5184000" />
     </task>
     <servers />
   </component>

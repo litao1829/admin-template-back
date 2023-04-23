@@ -5,31 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af86d6e4-7574-4848-bb5f-f0d683e2e4d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/cache/RedisCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/cache/RedisKeys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/config/JacksonConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/constant/Constant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/excel/DateConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/excel/ExcelDataListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/exception/ErrorCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/exception/ServerException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/exception/ServerExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/utils/AddressUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/utils/AssertUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/utils/DateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/utils/ExcelUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/utils/HttpContextUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/utils/IpUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/utils/JsonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/utils/PageResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/utils/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/utils/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/utils/TreeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/security/cache/TokenStoreCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/security/exception/SecurityAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/security/filter/AuthenticationTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/security/user/SecurityUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/security/user/UserDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/security/utils/TokenUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/a.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682244541744</updated>
-      <workItem from="1682244548056" duration="2889000" />
+      <workItem from="1682244548056" duration="3877000" />
     </task>
     <servers />
   </component>

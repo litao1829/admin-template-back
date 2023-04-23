@@ -15,6 +15,9 @@
     <version>${revision}</version>
     <packaging>pom</packaging>
     <description>多模块API模块项目父工程</description>
+    <modules>
+        <module>admin-base</module>
+    </modules>
 
     <properties>
         <revision>1.0.0</revision>

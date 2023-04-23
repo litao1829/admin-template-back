@@ -17,7 +17,7 @@ import java.io.IOException;
  * 用来解决匿名访问无权限时的异常信息。我们可以通过实现该接口，用来处理没有访问权限的响应数据
  * 然后再把 SecurityAuthenticationEntryPoint 添加在 SecurityConfig ，就会生效
  *
- * @author mqxu
+ * @author
  */
 public class SecurityAuthenticationEntryPoint implements AuthenticationEntryPoint {
 

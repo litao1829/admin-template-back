@@ -24,7 +24,7 @@ import java.io.IOException;
  * 我们可以通过新增过滤器，让SpringSecurity支持token认证
  * 然后再把这个过滤器配置在UsernamePasswordAuthenticationFilter的前面
  *
- * @author mqxu
+ * @author
  */
 @Component
 @AllArgsConstructor

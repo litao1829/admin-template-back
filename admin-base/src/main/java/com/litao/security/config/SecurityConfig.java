@@ -29,7 +29,7 @@ import java.util.List;
 /**
  * SpringSecurity 配置文件，包含了第三方登录配置、权限放行配置等。
  *
- * @author mqxu
+ * @author
  */
 @Configuration
 @AllArgsConstructor

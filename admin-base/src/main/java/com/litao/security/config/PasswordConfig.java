@@ -12,7 +12,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
  * 加密后的格式为：{encodingId}password
  * 其中，encodingId 为对应的加密算法，默认使用的是 BCryptPasswordEncoder 加密算法
  *
- * @author mqxu
+ * @author
  */
 @Configuration
 public class PasswordConfig {

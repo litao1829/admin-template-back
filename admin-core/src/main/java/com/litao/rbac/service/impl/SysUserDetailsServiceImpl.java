@@ -3,6 +3,7 @@ package com.litao.rbac.service.impl;
 import com.litao.rbac.convert.SysUserConvert;
 import com.litao.rbac.entity.SysUserEntity;
 import com.litao.rbac.enums.UserStatusEnum;
+import com.litao.rbac.service.SysMenuService;
 import com.litao.rbac.service.SysUserDetailsService;
 import com.litao.security.user.UserDetail;
 import lombok.AllArgsConstructor;
@@ -21,6 +22,7 @@ import java.util.Set;
 @Service
 @AllArgsConstructor
 public class SysUserDetailsServiceImpl implements SysUserDetailsService {
+    private final SysMenuService sysMenuService;
 
     @Override
     public UserDetails getUserDetails(SysUserEntity userEntity) {
@@ -33,7 +35,7 @@ public class SysUserDetailsServiceImpl implements SysUserDetailsService {
         }
 
         // 用户权限列表
-        Set<String> authoritySet = new HashSet<>();
+        Set<String> authoritySet =sysMenuService.getUserAuthority(userDetail);
         userDetail.setAuthoritySet(authoritySet);
 
         return userDetail;

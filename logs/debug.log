@@ -34,3 +34,11 @@
 2023-04-23 21:39:48.417 [http-nio-8080-exec-23] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
 2023-04-23 21:39:48.417 [http-nio-8080-exec-23] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
 2023-04-23 21:39:48.419 [http-nio-8080-exec-23] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 30
+2023-04-23 22:00:12.516 [main] DEBUG com.litao.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-23 22:00:14.609 [main] DEBUG c.litao.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-23 22:00:35.995 [http-nio-8080-exec-10] DEBUG com.litao.rbac.dao.SysUserDao.selectById - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE id=? AND deleted=0
+2023-04-23 22:00:36.012 [http-nio-8080-exec-10] DEBUG com.litao.rbac.dao.SysUserDao.selectById - ==> Parameters: 10000(Long)
+2023-04-23 22:00:36.028 [http-nio-8080-exec-10] DEBUG com.litao.rbac.dao.SysUserDao.selectById - <==      Total: 1
+2023-04-23 22:00:36.101 [http-nio-8080-exec-10] DEBUG com.litao.rbac.dao.SysUserDao.updateById - ==>  Preparing: UPDATE sys_user SET username=?, password=?, real_name=?, avatar=?, gender=?, email=?, mobile=?, super_admin=?, status=?, create_time=?, updater=?, update_time=? WHERE id=? AND deleted=0
+2023-04-23 22:00:36.102 [http-nio-8080-exec-10] DEBUG com.litao.rbac.dao.SysUserDao.updateById - ==> Parameters: admin(String), {bcrypt}$2a$10$Kof9J3A2npq1yMQrc6iYDOfxzd.AA2Nm.yvJxJ3xXLJPgZr7/d5Nq(String), InfinityX7(String), https://i2.100024.xyz/2023/01/26/3e727b.webp(String), 1(Integer), 16422802@qq.com(String), 13951905171(String), 1(Integer), 1(Integer), 2023-04-09 17:33:13.0(Timestamp), 10000(Long), 2023-04-09 17:33:13.0(Timestamp), 10000(Long)
+2023-04-23 22:00:36.108 [http-nio-8080-exec-10] DEBUG com.litao.rbac.dao.SysUserDao.updateById - <==    Updates: 1

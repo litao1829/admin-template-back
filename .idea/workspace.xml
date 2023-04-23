@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af86d6e4-7574-4848-bb5f-f0d683e2e4d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/controller/SysUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/convert/SysMenuConvert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/convert/SysUserConvert.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/convert/SysUserConvert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/dao/SysMenuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/dao/SysMenuDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/SysMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/SysMenuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysMenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysMenuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysUserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysUserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-core/src/main/resources/mapper/SysMenuDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-core/src/main/resources/mapper/SysMenuDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/SysUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +107,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682244541744</updated>
-      <workItem from="1682244548056" duration="13097000" />
+      <workItem from="1682244548056" duration="13711000" />
     </task>
     <servers />
   </component>

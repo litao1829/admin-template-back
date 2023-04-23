@@ -3,14 +3,19 @@ package com.litao.rbac.controller;
 import com.litao.common.utils.Result;
 import com.litao.rbac.convert.SysUserConvert;
 import com.litao.rbac.service.SysMenuService;
+import com.litao.rbac.service.SysUserService;
 import com.litao.rbac.vo.SysAuthVO;
+import com.litao.rbac.vo.SysUserPasswordVO;
 import com.litao.rbac.vo.SysUserVO;
 import com.litao.security.user.SecurityUser;
 import com.litao.security.user.UserDetail;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -25,6 +30,9 @@ import org.springframework.web.bind.annotation.RestController;
 @Tag(name = "用户管理")
 public class SysUserController {
     private final SysMenuService sysMenuService;
+    // 补充
+    private final PasswordEncoder passwordEncoder;
+    private final SysUserService sysUserService;
 
     @PostMapping("info")
     @Operation(summary = "获取登录用户信息")
@@ -39,6 +47,20 @@ public class SysUserController {
         //3 获得用户授权信息
         vo.setAuthority(sysMenuService.getUserAuthority(userDetail));
         return Result.ok(vo);
+    }
+
+
+    @PostMapping("password")
+    @Operation(summary = "修改密码")
+    public Result<String> password(@RequestBody @Valid SysUserPasswordVO vo) {
+        // 原密码不正确
+        UserDetail user = SecurityUser.getUser();
+        if (!passwordEncoder.matches(vo.getOldPassword(), user.getPassword())) {
+            return Result.error("原密码不正确");
+        }
+        // 修改密码
+        sysUserService.updatePassword(user.getId(), passwordEncoder.encode(vo.getNewPassword()));
+        return Result.ok();
     }
 }
 

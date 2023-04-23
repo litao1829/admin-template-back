@@ -11,5 +11,12 @@ import com.litao.rbac.entity.SysUserEntity;
  */
 public interface SysUserService extends BaseService<SysUserEntity> {
 
+    /**
+     * 修改密码
+     *
+     * @param id          用户ID
+     * @param newPassword 新密码
+     */
+    void updatePassword(Long id, String newPassword);
 
 }

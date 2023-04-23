@@ -5,50 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af86d6e4-7574-4848-bb5f-f0d683e2e4d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/dao/SysLogLoginDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/dao/SysMenuDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/dao/SysRoleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/dao/SysRoleMenuDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/dao/SysUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/dao/SysUserRoleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/entity/SysLogLoginEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/entity/SysMenuEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/entity/SysRoleEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/entity/SysRoleMenuEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/entity/SysUserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/entity/SysUserRoleEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/enums/LoginOperationEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/enums/MenuTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/enums/SuperAdminEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/enums/UserGenderEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/enums/UserStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/SysAuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/SysMenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/SysRoleMenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/SysRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/SysUserRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/SysUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysAuthServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysMenuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysRoleMenuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysRoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysUserRoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/vo/SysAccountLoginVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/vo/SysAuthVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/vo/SysCaptchaVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/vo/SysLogLoginVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/vo/SysMenuVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/vo/SysTokenVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/vo/SysUserPasswordVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/vo/SysUserVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/resources/mapper/SysLogLoginDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/resources/mapper/SysMenuDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/resources/mapper/SysRoleDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/resources/mapper/SysRoleMenuDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/resources/mapper/SysUserDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-core/src/main/resources/mapper/SysUserRoleDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/convert/SysUserConvert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/dao/SysUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/dao/SysUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/SysAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/SysAuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/SysUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/SysUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysAuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysAuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysUserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysUserDetailsServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -122,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682244541744</updated>
-      <workItem from="1682244548056" duration="7209000" />
+      <workItem from="1682244548056" duration="8148000" />
     </task>
     <servers />
   </component>

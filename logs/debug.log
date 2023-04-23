@@ -1,0 +1,22 @@
+2023-04-23 20:47:08.526 [main] DEBUG com.litao.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-23 20:47:10.217 [main] DEBUG c.litao.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-23 20:48:29.180 [main] DEBUG com.litao.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-23 20:48:30.931 [main] DEBUG c.litao.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-23 20:51:51.234 [main] DEBUG com.litao.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-23 20:51:52.900 [main] DEBUG c.litao.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-23 20:56:56.533 [main] DEBUG com.litao.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-23 20:56:58.345 [main] DEBUG c.litao.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-23 21:03:04.347 [main] DEBUG com.litao.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-23 21:03:06.632 [main] DEBUG c.litao.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-23 21:07:18.623 [main] DEBUG com.litao.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-23 21:07:20.717 [main] DEBUG c.litao.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-23 21:13:38.632 [main] DEBUG com.litao.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-23 21:13:40.341 [main] DEBUG c.litao.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-23 21:17:04.376 [http-nio-8080-exec-9] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-23 21:17:04.392 [http-nio-8080-exec-9] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-23 21:17:04.413 [http-nio-8080-exec-9] DEBUG com.litao.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-23 21:24:36.504 [main] DEBUG com.litao.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-23 21:24:38.442 [main] DEBUG c.litao.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-23 21:26:42.162 [http-nio-8080-exec-18] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-23 21:26:42.183 [http-nio-8080-exec-18] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-23 21:26:42.205 [http-nio-8080-exec-18] DEBUG com.litao.rbac.dao.SysUserDao.selectList - <==      Total: 1

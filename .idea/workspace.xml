@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af86d6e4-7574-4848-bb5f-f0d683e2e4d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-server/src/main/java/com/litao/ServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-server/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-server/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-server/src/main/resources/application-test.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-server/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-server/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/SysCaptchaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysCaptchaServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-base/src/main/java/com/litao/common/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-base/src/main/resources/auth.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-base/src/main/resources/auth.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/controller/SysAuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/controller/SysAuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysAuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-core/src/main/java/com/litao/rbac/service/impl/SysAuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin-server/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +56,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -83,6 +83,26 @@
       <recent name="D:\WEBIDEA\admin-template\admin-core\src\main\resources\mapper" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="ServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="admin-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.litao.ServerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.litao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ServerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -91,7 +111,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682244541744</updated>
-      <workItem from="1682244548056" duration="9324000" />
+      <workItem from="1682244548056" duration="11615000" />
     </task>
     <servers />
   </component>

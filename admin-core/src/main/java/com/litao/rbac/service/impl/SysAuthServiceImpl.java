@@ -2,6 +2,7 @@ package com.litao.rbac.service.impl;
 
 import com.litao.common.exception.ServerException;
 import com.litao.rbac.service.SysAuthService;
+import com.litao.rbac.service.SysCaptchaService;
 import com.litao.rbac.vo.SysAccountLoginVO;
 import com.litao.rbac.vo.SysTokenVO;
 import com.litao.security.cache.TokenStoreCache;
@@ -26,9 +27,15 @@ import org.springframework.stereotype.Service;
 public class SysAuthServiceImpl implements SysAuthService {
     private final TokenStoreCache tokenStoreCache;
     private final AuthenticationManager authenticationManager;
+    private final SysCaptchaService sysCaptchaService;
 
     @Override
     public SysTokenVO loginByAccount(SysAccountLoginVO login) {
+        boolean validate = sysCaptchaService.validate(login.getKey(), login.getCaptcha());
+        if(!validate){
+            throw new ServerException("验证码错误");
+        }
+
         Authentication authentication;
         try {
             // 用户认证

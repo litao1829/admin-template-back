@@ -18,7 +18,7 @@ public class SwaggerConfig {
     @Bean
     public GroupedOpenApi userApi() {
         String[] paths = {"/**"};
-        String[] packagedToMatch = {"top.mqxu"};
+        String[] packagedToMatch = {"com.litao"};
         return GroupedOpenApi.builder().group("api boot")
                 .pathsToMatch(paths)
                 .packagesToScan(packagedToMatch).build();

@@ -25,10 +25,27 @@ public class IndexServiceImpl implements IndexService {
     }
 
     @Override
-    public BarVO statistics2() {
-        List<String> x=List.of("00","23","22","21","20","19","18","17","16","15","14","13","12","11","10","09","08","07","06","05","04","03","02","01");
-        List<Integer> y=List.of(0,0,0,0,0,4,6,3,0,6,3,0,0,11,18,0,0,0,0,0,0,0,0,0);
-        return BarVO.builder().x(x).y(y).build();
+    public BarVO statistics2(String type) {
+        BarVO barVO = null;
+        switch (type) {
+            case "hour" -> {
+                List<String> x = List.of("00", "23", "22", "21", "20", "19", "18", "17", "16", "15", "14", "13", "12", "11", "10", "09", "08", "07", "06", "05", "04", "03", "02", "01");
+                List<Integer> y = List.of(0, 0, 0, 0, 0, 4, 6, 3, 0, 6, 3, 0, 0, 11, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+                barVO = BarVO.builder().x(x).y(y).build();
+            }
+            case "week" -> {
+                List<String> x = List.of("07-24", "07-23", "07-22", "07-21", "07-20", "07-19", "07-18");
+                List<Integer> y = List.of(51, 0, 1, 1, 0, 2, 1);
+                barVO = BarVO.builder().x(x).y(y).build();
+            }
+            case "month" -> {
+                List<String> x = List.of("07-24", "07-23", "07-22", "07-21", "07-20", "07-19", "07-18", "07-17", "07-16", "07-15", "07-14", "07-13", "07-12",
+                        "07-11", "07-10", "07-09", "07-08", "07-07", "07-06", "07-05", "07-04", "07-03", "07-02", "07-01", "06-30", "06-29", "06-28", "06-27", "06-26");
+                List<Integer> y = List.of(51, 51, 10, 11, 31, 20, 22, 41, 20, 34, 32, 12, 10, 7, 8, 5, 17, 9, 20, 30, 41, 10, 20, 14, 16, 18, 28, 20, 30, 29);
+                barVO = BarVO.builder().x(x).y(y).build();
+            }
+        }
+        return barVO;
     }
 
     @Override

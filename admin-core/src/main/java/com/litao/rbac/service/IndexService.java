@@ -22,7 +22,7 @@ public interface IndexService {
      * @return BarVO
      *
      */
-    BarVO statistics2();
+    BarVO statistics2(String type);
 
 
     /**

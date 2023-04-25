@@ -31,10 +31,10 @@ public class SysAuthServiceImpl implements SysAuthService {
 
     @Override
     public SysTokenVO loginByAccount(SysAccountLoginVO login) {
-        boolean validate = sysCaptchaService.validate(login.getKey(), login.getCaptcha());
-        if(!validate){
-            throw new ServerException("验证码错误");
-        }
+//        boolean validate = sysCaptchaService.validate(login.getKey(), login.getCaptcha());
+//        if(!validate){
+//            throw new ServerException("验证码错误");
+//        }
 
         Authentication authentication;
         try {
@@ -47,7 +47,7 @@ public class SysAuthServiceImpl implements SysAuthService {
 
         // 用户信息
         UserDetail user = (UserDetail) authentication.getPrincipal();
-
+        System.out.println(user.toString());
         // 生成 accessToken
         String accessToken = TokenUtils.generator();
 

@@ -1,0 +1,122 @@
+2023-04-24 11:28:37.213 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-24 11:28:37.337 [main] INFO  com.litao.ServerApplication - Starting ServerApplication using Java 17.0.6 with PID 4760 (D:\WEBIDEA\admin-template\admin-server\target\classes started by Acer in D:\WEBIDEA\admin-template)
+2023-04-24 11:28:37.340 [main] INFO  com.litao.ServerApplication - The following 1 profile is active: "dev"
+2023-04-24 11:28:39.861 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 11:28:39.865 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-24 11:28:39.943 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 0 Redis repository interfaces.
+2023-04-24 11:28:40.794 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-24 11:28:40.803 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-24 11:28:40.803 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-24 11:28:40.804 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-24 11:28:40.913 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-24 11:28:40.913 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3500 ms
+2023-04-24 11:28:43.078 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@191b44ca, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5de243bb, org.springframework.security.web.context.SecurityContextHolderFilter@74c04377, org.springframework.security.web.header.HeaderWriterFilter@33a3e5db, org.springframework.security.web.authentication.logout.LogoutFilter@6f7c9755, com.litao.security.filter.AuthenticationTokenFilter@3f06ebe0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e645600, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e7b3e54, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c4cf7eb, org.springframework.security.web.session.SessionManagementFilter@57167ccb, org.springframework.security.web.access.ExceptionTranslationFilter@2a504ea7, org.springframework.security.web.access.intercept.AuthorizationFilter@53b2e1eb]
+2023-04-24 11:28:43.504 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-24 11:28:43.524 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-24 11:28:43.533 [main] INFO  com.litao.ServerApplication - Started ServerApplication in 6.947 seconds (process running for 8.25)
+2023-04-24 11:29:22.762 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 11:29:22.762 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-24 11:29:22.764 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-04-24 11:29:23.668 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Starting...
+2023-04-24 11:29:24.854 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.pool.HikariPool - MakuHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@3705fd
+2023-04-24 11:29:24.856 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Start completed.
+2023-04-24 12:35:13.616 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Shutdown initiated...
+2023-04-24 12:35:13.641 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Shutdown completed.
+2023-04-24 13:48:17.935 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-24 13:48:18.027 [main] INFO  com.litao.ServerApplication - Starting ServerApplication using Java 17.0.6 with PID 21992 (D:\WEBIDEA\admin-template\admin-server\target\classes started by Acer in D:\WEBIDEA\admin-template)
+2023-04-24 13:48:18.028 [main] INFO  com.litao.ServerApplication - The following 1 profile is active: "dev"
+2023-04-24 13:48:20.265 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 13:48:20.268 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-24 13:48:20.358 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 0 Redis repository interfaces.
+2023-04-24 13:48:21.285 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-24 13:48:21.295 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-24 13:48:21.296 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-24 13:48:21.296 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-24 13:48:21.406 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-24 13:48:21.407 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3312 ms
+2023-04-24 13:48:23.768 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@21bf308, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4cded2cd, org.springframework.security.web.context.SecurityContextHolderFilter@6604f246, org.springframework.security.web.header.HeaderWriterFilter@74c04377, org.springframework.security.web.authentication.logout.LogoutFilter@39685204, com.litao.security.filter.AuthenticationTokenFilter@30798137, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53d9af1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c89e263, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12e40e98, org.springframework.security.web.session.SessionManagementFilter@6b103db7, org.springframework.security.web.access.ExceptionTranslationFilter@37753b69, org.springframework.security.web.access.intercept.AuthorizationFilter@3c5e4aac]
+2023-04-24 13:48:24.206 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-24 13:48:24.234 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-24 13:48:24.244 [main] INFO  com.litao.ServerApplication - Started ServerApplication in 6.817 seconds (process running for 11.411)
+2023-04-24 13:50:36.565 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 13:50:36.565 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-24 13:50:36.568 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2023-04-24 13:50:37.682 [http-nio-8080-exec-24] INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 342 ms
+2023-04-24 13:51:44.798 [http-nio-8080-exec-14] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Starting...
+2023-04-24 13:51:45.239 [http-nio-8080-exec-14] INFO  com.zaxxer.hikari.pool.HikariPool - MakuHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f92c84
+2023-04-24 13:51:45.241 [http-nio-8080-exec-14] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Start completed.
+2023-04-24 14:13:00.527 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Shutdown initiated...
+2023-04-24 14:13:00.530 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Shutdown completed.
+2023-04-24 14:13:05.541 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-24 14:13:05.587 [main] INFO  com.litao.ServerApplication - Starting ServerApplication using Java 17.0.6 with PID 5472 (D:\WEBIDEA\admin-template\admin-server\target\classes started by Acer in D:\WEBIDEA\admin-template)
+2023-04-24 14:13:05.588 [main] INFO  com.litao.ServerApplication - The following 1 profile is active: "dev"
+2023-04-24 14:13:06.309 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 14:13:06.311 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-24 14:13:06.344 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2023-04-24 14:13:06.943 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-24 14:13:06.951 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-24 14:13:06.951 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-24 14:13:06.951 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-24 14:13:07.045 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-24 14:13:07.045 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1419 ms
+2023-04-24 14:13:08.662 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4d5ea776, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d68be4f, org.springframework.security.web.context.SecurityContextHolderFilter@1b841e7d, org.springframework.security.web.header.HeaderWriterFilter@3d4b45b, org.springframework.security.web.authentication.logout.LogoutFilter@47d4e28a, com.litao.security.filter.AuthenticationTokenFilter@15186ce0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@eb695e8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7eebb316, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34eb5d01, org.springframework.security.web.session.SessionManagementFilter@4bfe83d, org.springframework.security.web.access.ExceptionTranslationFilter@d5e3f55, org.springframework.security.web.access.intercept.AuthorizationFilter@c1386b4]
+2023-04-24 14:13:09.061 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-24 14:13:09.083 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-24 14:13:09.093 [main] INFO  com.litao.ServerApplication - Started ServerApplication in 3.908 seconds (process running for 4.692)
+2023-04-24 14:13:40.640 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 14:13:40.640 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-24 14:13:40.642 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-04-24 14:13:41.401 [http-nio-8080-exec-24] INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 277 ms
+2023-04-24 14:14:14.645 [http-nio-8080-exec-11] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Starting...
+2023-04-24 14:14:14.912 [http-nio-8080-exec-11] INFO  com.zaxxer.hikari.pool.HikariPool - MakuHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@6fd9e2e7
+2023-04-24 14:14:14.914 [http-nio-8080-exec-11] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Start completed.
+2023-04-24 17:38:05.761 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Shutdown initiated...
+2023-04-24 17:38:05.763 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Shutdown completed.
+2023-04-24 18:51:14.099 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-24 18:51:14.179 [main] INFO  com.litao.ServerApplication - Starting ServerApplication using Java 17.0.6 with PID 22692 (D:\WEBIDEA\admin-template\admin-server\target\classes started by Acer in D:\WEBIDEA\admin-template)
+2023-04-24 18:51:14.181 [main] INFO  com.litao.ServerApplication - The following 1 profile is active: "dev"
+2023-04-24 18:51:17.351 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 18:51:17.355 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-24 18:51:17.449 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 0 Redis repository interfaces.
+2023-04-24 18:51:18.528 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-24 18:51:18.541 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-24 18:51:18.542 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-24 18:51:18.542 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-24 18:51:18.668 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-24 18:51:18.668 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4405 ms
+2023-04-24 18:51:21.286 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@434a8938, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@237cd264, org.springframework.security.web.context.SecurityContextHolderFilter@191b44ca, org.springframework.security.web.header.HeaderWriterFilter@5f0ca069, org.springframework.security.web.authentication.logout.LogoutFilter@1c9975a8, com.litao.security.filter.AuthenticationTokenFilter@4dd1548e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c4cf7eb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35260785, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@51cd2d2, org.springframework.security.web.session.SessionManagementFilter@53b2e1eb, org.springframework.security.web.access.ExceptionTranslationFilter@57ed02e6, org.springframework.security.web.access.intercept.AuthorizationFilter@18ff1520]
+2023-04-24 18:51:21.781 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-24 18:51:21.808 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-24 18:51:21.818 [main] INFO  com.litao.ServerApplication - Started ServerApplication in 8.293 seconds (process running for 13.109)
+2023-04-24 18:56:55.592 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 18:56:55.592 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-24 18:56:55.594 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-04-24 18:56:56.597 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Starting...
+2023-04-24 18:56:57.105 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - MakuHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@16e16e83
+2023-04-24 18:56:57.107 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Start completed.
+2023-04-24 19:35:33.893 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Shutdown initiated...
+2023-04-24 19:35:33.896 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Shutdown completed.
+2023-04-24 20:36:44.658 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-24 20:36:44.704 [main] INFO  com.litao.ServerApplication - Starting ServerApplication using Java 17.0.6 with PID 19536 (D:\WEBIDEA\admin-template\admin-server\target\classes started by Acer in D:\WEBIDEA\admin-template)
+2023-04-24 20:36:44.705 [main] INFO  com.litao.ServerApplication - The following 1 profile is active: "dev"
+2023-04-24 20:36:46.323 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-24 20:36:46.325 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-24 20:36:46.359 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2023-04-24 20:36:47.178 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-24 20:36:47.188 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-24 20:36:47.189 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-24 20:36:47.189 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-24 20:36:47.290 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-24 20:36:47.290 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2548 ms
+2023-04-24 20:36:49.635 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7b2dd35d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@405223e4, org.springframework.security.web.context.SecurityContextHolderFilter@5f0ca069, org.springframework.security.web.header.HeaderWriterFilter@60f3239f, org.springframework.security.web.authentication.logout.LogoutFilter@4cded2cd, com.litao.security.filter.AuthenticationTokenFilter@194b9783, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@552ffa44, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e66b498, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d2133fd, org.springframework.security.web.session.SessionManagementFilter@4fef5792, org.springframework.security.web.access.ExceptionTranslationFilter@47d4e28a, org.springframework.security.web.access.intercept.AuthorizationFilter@43df1377]
+2023-04-24 20:36:50.044 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-24 20:36:50.067 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-24 20:36:50.075 [main] INFO  com.litao.ServerApplication - Started ServerApplication in 5.911 seconds (process running for 7.379)
+2023-04-24 20:37:20.631 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-24 20:37:20.631 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-24 20:37:20.633 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-04-24 20:37:21.943 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Starting...
+2023-04-24 20:37:22.509 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - MakuHikariCP - Added connection com.mysql.cj.jdbc.ConnectionImpl@6835ae4b
+2023-04-24 20:37:22.512 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Start completed.
+2023-04-24 20:57:04.612 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Shutdown initiated...
+2023-04-24 20:57:04.615 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - MakuHikariCP - Shutdown completed.

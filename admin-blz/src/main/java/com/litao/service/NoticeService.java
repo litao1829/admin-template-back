@@ -52,4 +52,12 @@ public interface NoticeService extends BaseService<NoticeEntity> {
      */
     void delete(Long id);
 
+
+    /**
+     * 批量删除通知
+     *
+     * @param ids 入参
+     */
+    void deleteSelectAll(List<Long> ids);
+
 }

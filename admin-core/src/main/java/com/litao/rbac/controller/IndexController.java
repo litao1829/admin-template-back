@@ -5,6 +5,7 @@ import com.litao.rbac.service.IndexService;
 import com.litao.rbac.vo.BarVO;
 import com.litao.rbac.vo.LabelVO;
 import com.litao.rbac.vo.PanelVO;
+import com.litao.rbac.vo.PieChartVO;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
@@ -42,5 +43,10 @@ public class IndexController {
         Map<String,List<LabelVO>> map=indexService.statistics3();
         return Result.ok(map);
     }
-
+    @GetMapping("statistics4")
+    @Operation(summary = "统计组件4")
+    public Result<PieChartVO> getstatistics4(){
+        PieChartVO pieChartVO=indexService.statistics4();
+        return Result.ok(pieChartVO);
+    }
 }

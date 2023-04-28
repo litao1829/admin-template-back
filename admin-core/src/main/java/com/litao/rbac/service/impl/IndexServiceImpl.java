@@ -4,6 +4,7 @@ import com.litao.rbac.service.IndexService;
 import com.litao.rbac.vo.BarVO;
 import com.litao.rbac.vo.LabelVO;
 import com.litao.rbac.vo.PanelVO;
+import com.litao.rbac.vo.PieChartVO;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -56,5 +57,13 @@ public class IndexServiceImpl implements IndexService {
         map.put("goods",goods);
         map.put("orders",orders);
         return map;
+    }
+
+    @Override
+    public PieChartVO statistics4() {
+        List<String> name=List.of("完成","未完成","取消","待付款");
+        List<Integer> data=List.of(200,12,5,80);
+        PieChartVO pieChartVO= PieChartVO.builder().value(data).name(name).build();
+        return pieChartVO;
     }
 }

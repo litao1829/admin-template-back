@@ -3,6 +3,7 @@ package com.litao.rbac.service;
 import com.litao.rbac.vo.BarVO;
 import com.litao.rbac.vo.LabelVO;
 import com.litao.rbac.vo.PanelVO;
+import com.litao.rbac.vo.PieChartVO;
 
 import java.util.List;
 import java.util.Map;
@@ -31,4 +32,12 @@ public interface IndexService {
      *
      */
     Map<String,List<LabelVO>> statistics3();
+
+
+    /**
+     * 后台首页统计4：饼图
+     * @return Map<String,List<LabelVO>>
+     *
+     */
+    PieChartVO statistics4();
 }

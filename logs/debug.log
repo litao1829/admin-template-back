@@ -14,3 +14,479 @@
 2023-04-28 10:43:20.401 [http-nio-8080-exec-23] DEBUG com.litao.dao.NoticeDao.deleteById - ==>  Preparing: UPDATE t_notice SET updater=?,update_time=?, deleted=1 WHERE id=? AND deleted=0
 2023-04-28 10:43:20.402 [http-nio-8080-exec-23] DEBUG com.litao.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 10:43:20.336(Timestamp), 115(Long)
 2023-04-28 10:43:20.403 [http-nio-8080-exec-23] DEBUG com.litao.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 10:43:20.402(Timestamp), 116(Long)
+2023-04-28 11:04:32.179 [http-nio-8080-exec-7] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:04:32.179 [http-nio-8080-exec-7] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:04:32.510 [http-nio-8080-exec-7] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:04:32.514 [http-nio-8080-exec-7] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 11:04:32.514 [http-nio-8080-exec-7] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 10(Long)
+2023-04-28 11:04:32.520 [http-nio-8080-exec-7] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 10
+2023-04-28 11:10:18.010 [http-nio-8080-exec-28] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-28 11:10:18.010 [http-nio-8080-exec-28] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-28 11:10:18.012 [http-nio-8080-exec-28] DEBUG com.litao.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-28 11:10:18.013 [http-nio-8080-exec-28] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 11:10:18.013 [http-nio-8080-exec-28] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 11:10:18.015 [http-nio-8080-exec-28] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 30
+2023-04-28 11:10:18.093 [http-nio-8080-exec-28] DEBUG com.litao.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 11:10:18.094 [http-nio-8080-exec-28] DEBUG com.litao.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-28 11:10:18.093(Timestamp)
+2023-04-28 11:10:18.133 [http-nio-8080-exec-28] DEBUG com.litao.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-28 11:10:18.146 [http-nio-8080-exec-21] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 11:10:18.146 [http-nio-8080-exec-21] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 11:10:18.152 [http-nio-8080-exec-21] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - <==      Total: 10
+2023-04-28 11:10:18.155 [http-nio-8080-exec-21] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 11:10:18.155 [http-nio-8080-exec-21] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 11:10:18.157 [http-nio-8080-exec-21] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 30
+2023-04-28 11:10:40.058 [http-nio-8080-exec-26] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:10:40.058 [http-nio-8080-exec-26] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:10:40.059 [http-nio-8080-exec-26] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:10:40.060 [http-nio-8080-exec-26] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 11:10:40.060 [http-nio-8080-exec-26] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 11:10:40.066 [http-nio-8080-exec-26] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 11:12:32.264 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 11:12:32.264 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 11:12:32.274 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - <==      Total: 10
+2023-04-28 11:12:32.275 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 11:12:32.276 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 11:12:32.277 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 30
+2023-04-28 11:12:32.499 [http-nio-8080-exec-6] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:12:32.501 [http-nio-8080-exec-6] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:12:32.503 [http-nio-8080-exec-6] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:12:32.505 [http-nio-8080-exec-6] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 11:12:32.505 [http-nio-8080-exec-6] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 11:12:32.511 [http-nio-8080-exec-6] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 11:14:26.275 [http-nio-8080-exec-20] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 11:14:26.276 [http-nio-8080-exec-20] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 11:14:26.281 [http-nio-8080-exec-20] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - <==      Total: 10
+2023-04-28 11:14:26.282 [http-nio-8080-exec-20] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 11:14:26.283 [http-nio-8080-exec-20] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 11:14:26.287 [http-nio-8080-exec-20] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 30
+2023-04-28 11:14:26.558 [http-nio-8080-exec-13] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:14:26.558 [http-nio-8080-exec-13] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:14:26.559 [http-nio-8080-exec-13] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:14:26.561 [http-nio-8080-exec-13] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 11:14:26.561 [http-nio-8080-exec-13] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 11:14:26.564 [http-nio-8080-exec-13] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 11:14:33.542 [http-nio-8080-exec-16] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:14:33.542 [http-nio-8080-exec-16] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:14:33.543 [http-nio-8080-exec-16] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:14:33.544 [http-nio-8080-exec-16] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 11:14:33.544 [http-nio-8080-exec-16] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 11:14:33.545 [http-nio-8080-exec-16] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 5
+2023-04-28 11:14:43.160 [http-nio-8080-exec-28] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:14:43.160 [http-nio-8080-exec-28] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:14:43.161 [http-nio-8080-exec-28] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:14:43.162 [http-nio-8080-exec-28] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 11:14:43.163 [http-nio-8080-exec-28] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 11:14:43.165 [http-nio-8080-exec-28] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 8
+2023-04-28 11:16:22.155 [main] DEBUG com.litao.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 11:16:24.223 [main] DEBUG c.litao.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 11:16:27.420 [http-nio-8080-exec-2] DEBUG com.litao.dao.NoticeDao.deleteById - ==>  Preparing: UPDATE t_notice SET updater=?,update_time=?, deleted=1 WHERE id=? AND deleted=0
+2023-04-28 11:16:27.442 [http-nio-8080-exec-2] DEBUG com.litao.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 11:16:27.362(Timestamp), 116(Long)
+2023-04-28 11:16:27.443 [http-nio-8080-exec-2] DEBUG com.litao.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 11:16:27.442(Timestamp), 115(Long)
+2023-04-28 11:16:29.371 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 11:16:29.372 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 11:16:29.424 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - <==      Total: 10
+2023-04-28 11:16:29.440 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 11:16:29.441 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 11:16:29.444 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 30
+2023-04-28 11:16:29.912 [http-nio-8080-exec-6] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:16:29.913 [http-nio-8080-exec-6] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:16:29.915 [http-nio-8080-exec-6] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:16:29.921 [http-nio-8080-exec-6] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 11:16:29.921 [http-nio-8080-exec-6] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 11:16:29.932 [http-nio-8080-exec-6] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 11:16:33.783 [http-nio-8080-exec-8] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:16:33.784 [http-nio-8080-exec-8] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:16:33.786 [http-nio-8080-exec-8] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:16:33.787 [http-nio-8080-exec-8] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 11:16:33.788 [http-nio-8080-exec-8] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 11:16:33.795 [http-nio-8080-exec-8] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 6
+2023-04-28 11:16:49.917 [http-nio-8080-exec-10] DEBUG com.litao.dao.NoticeDao.deleteById - ==>  Preparing: UPDATE t_notice SET updater=?,update_time=?, deleted=1 WHERE id=? AND deleted=0
+2023-04-28 11:16:49.918 [http-nio-8080-exec-10] DEBUG com.litao.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 11:16:49.916(Timestamp), 114(Long)
+2023-04-28 11:16:49.918 [http-nio-8080-exec-10] DEBUG com.litao.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 11:16:49.918(Timestamp), 113(Long)
+2023-04-28 11:17:09.540 [http-nio-8080-exec-12] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:17:09.540 [http-nio-8080-exec-12] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:17:09.542 [http-nio-8080-exec-12] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:17:09.544 [http-nio-8080-exec-12] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 11:17:09.545 [http-nio-8080-exec-12] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 11:17:09.550 [http-nio-8080-exec-12] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 11:17:13.758 [http-nio-8080-exec-16] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:17:13.759 [http-nio-8080-exec-16] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:17:13.760 [http-nio-8080-exec-16] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:17:13.761 [http-nio-8080-exec-16] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 11:17:13.762 [http-nio-8080-exec-16] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 11:17:13.765 [http-nio-8080-exec-16] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 4
+2023-04-28 11:17:27.766 [http-nio-8080-exec-17] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:17:27.766 [http-nio-8080-exec-17] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:17:27.767 [http-nio-8080-exec-17] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:17:27.768 [http-nio-8080-exec-17] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 11:17:27.769 [http-nio-8080-exec-17] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 11:17:27.771 [http-nio-8080-exec-17] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 6
+2023-04-28 11:17:35.044 [http-nio-8080-exec-19] DEBUG com.litao.dao.NoticeDao.deleteById - ==>  Preparing: UPDATE t_notice SET updater=?,update_time=?, deleted=1 WHERE id=? AND deleted=0
+2023-04-28 11:17:35.044 [http-nio-8080-exec-19] DEBUG com.litao.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 11:17:35.043(Timestamp), 116(Long)
+2023-04-28 11:17:35.044 [http-nio-8080-exec-19] DEBUG com.litao.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 11:17:35.044(Timestamp), 115(Long)
+2023-04-28 11:17:35.086 [http-nio-8080-exec-21] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:17:35.089 [http-nio-8080-exec-21] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:17:35.090 [http-nio-8080-exec-21] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:17:35.091 [http-nio-8080-exec-21] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 11:17:35.091 [http-nio-8080-exec-21] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 11:17:35.094 [http-nio-8080-exec-21] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 4
+2023-04-28 11:17:40.313 [http-nio-8080-exec-23] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:17:40.313 [http-nio-8080-exec-23] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:17:40.314 [http-nio-8080-exec-23] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:17:40.315 [http-nio-8080-exec-23] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 11:17:40.316 [http-nio-8080-exec-23] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 11:17:40.318 [http-nio-8080-exec-23] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 4
+2023-04-28 11:17:57.424 [http-nio-8080-exec-25] DEBUG com.litao.dao.NoticeDao.deleteById - ==>  Preparing: UPDATE t_notice SET updater=?,update_time=?, deleted=1 WHERE id=? AND deleted=0
+2023-04-28 11:17:57.424 [http-nio-8080-exec-25] DEBUG com.litao.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 11:17:57.423(Timestamp), 111(Long)
+2023-04-28 11:17:57.425 [http-nio-8080-exec-25] DEBUG com.litao.dao.NoticeDao.deleteById - <==    Updates: 1
+2023-04-28 11:17:57.485 [http-nio-8080-exec-26] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:17:57.485 [http-nio-8080-exec-26] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:17:57.486 [http-nio-8080-exec-26] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:17:57.487 [http-nio-8080-exec-26] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 11:17:57.487 [http-nio-8080-exec-26] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 11:17:57.488 [http-nio-8080-exec-26] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 3
+2023-04-28 11:18:29.114 [http-nio-8080-exec-29] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:18:29.115 [http-nio-8080-exec-29] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:18:29.116 [http-nio-8080-exec-29] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:18:29.117 [http-nio-8080-exec-29] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 11:18:29.117 [http-nio-8080-exec-29] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 11:18:29.120 [http-nio-8080-exec-29] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 6
+2023-04-28 11:19:00.635 [http-nio-8080-exec-1] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:19:00.635 [http-nio-8080-exec-1] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:19:00.636 [http-nio-8080-exec-1] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:19:00.637 [http-nio-8080-exec-1] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 11:19:00.637 [http-nio-8080-exec-1] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 11:19:00.639 [http-nio-8080-exec-1] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 11:25:00.425 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 11:25:00.425 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 11:25:00.431 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - <==      Total: 10
+2023-04-28 11:25:00.433 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 11:25:00.433 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 11:25:00.435 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 30
+2023-04-28 11:25:00.605 [http-nio-8080-exec-6] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:25:00.606 [http-nio-8080-exec-6] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:25:00.606 [http-nio-8080-exec-6] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:25:00.607 [http-nio-8080-exec-6] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 11:25:00.607 [http-nio-8080-exec-6] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 11:25:00.609 [http-nio-8080-exec-6] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 11:25:14.386 [http-nio-8080-exec-8] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 11:25:14.387 [http-nio-8080-exec-8] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 11:25:14.389 [http-nio-8080-exec-8] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - <==      Total: 10
+2023-04-28 11:25:14.390 [http-nio-8080-exec-8] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 11:25:14.390 [http-nio-8080-exec-8] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 11:25:14.391 [http-nio-8080-exec-8] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 30
+2023-04-28 11:25:14.556 [http-nio-8080-exec-10] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:25:14.556 [http-nio-8080-exec-10] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:25:14.557 [http-nio-8080-exec-10] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:25:14.558 [http-nio-8080-exec-10] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 11:25:14.558 [http-nio-8080-exec-10] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 11:25:14.560 [http-nio-8080-exec-10] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 11:25:33.843 [http-nio-8080-exec-12] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 11:25:33.844 [http-nio-8080-exec-12] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 11:25:33.847 [http-nio-8080-exec-12] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - <==      Total: 10
+2023-04-28 11:25:33.848 [http-nio-8080-exec-12] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 11:25:33.849 [http-nio-8080-exec-12] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 11:25:33.850 [http-nio-8080-exec-12] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 30
+2023-04-28 11:25:33.969 [http-nio-8080-exec-16] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:25:33.969 [http-nio-8080-exec-16] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:25:33.970 [http-nio-8080-exec-16] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:25:33.971 [http-nio-8080-exec-16] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 11:25:33.971 [http-nio-8080-exec-16] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 11:25:33.974 [http-nio-8080-exec-16] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 11:26:00.657 [http-nio-8080-exec-14] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:26:00.657 [http-nio-8080-exec-14] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:26:00.658 [http-nio-8080-exec-14] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:26:00.658 [http-nio-8080-exec-14] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 11:26:00.658 [http-nio-8080-exec-14] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 11:26:00.660 [http-nio-8080-exec-14] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 11:26:01.892 [http-nio-8080-exec-17] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:26:01.892 [http-nio-8080-exec-17] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:26:01.893 [http-nio-8080-exec-17] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:26:01.893 [http-nio-8080-exec-17] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 11:26:01.893 [http-nio-8080-exec-17] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 11:26:01.895 [http-nio-8080-exec-17] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 11:26:04.999 [http-nio-8080-exec-19] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:26:05.000 [http-nio-8080-exec-19] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:26:05.001 [http-nio-8080-exec-19] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:26:05.002 [http-nio-8080-exec-19] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 11:26:05.002 [http-nio-8080-exec-19] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 11:26:05.004 [http-nio-8080-exec-19] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 6
+2023-04-28 11:26:09.155 [http-nio-8080-exec-21] DEBUG com.litao.dao.NoticeDao.deleteById - ==>  Preparing: UPDATE t_notice SET updater=?,update_time=?, deleted=1 WHERE id=? AND deleted=0
+2023-04-28 11:26:09.156 [http-nio-8080-exec-21] DEBUG com.litao.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 11:26:09.155(Timestamp), 114(Long)
+2023-04-28 11:26:09.156 [http-nio-8080-exec-21] DEBUG com.litao.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 11:26:09.156(Timestamp), 113(Long)
+2023-04-28 11:26:09.318 [http-nio-8080-exec-22] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:26:09.319 [http-nio-8080-exec-22] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:26:09.320 [http-nio-8080-exec-22] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:26:09.321 [http-nio-8080-exec-22] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 11:26:09.321 [http-nio-8080-exec-22] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 11:26:09.322 [http-nio-8080-exec-22] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 4
+2023-04-28 11:26:24.228 [http-nio-8080-exec-24] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:26:24.229 [http-nio-8080-exec-24] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:26:24.229 [http-nio-8080-exec-24] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:26:24.230 [http-nio-8080-exec-24] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 11:26:24.230 [http-nio-8080-exec-24] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 11:26:24.232 [http-nio-8080-exec-24] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 6
+2023-04-28 11:26:58.458 [http-nio-8080-exec-27] DEBUG com.litao.dao.NoticeDao.deleteById - ==>  Preparing: UPDATE t_notice SET updater=?,update_time=?, deleted=1 WHERE id=? AND deleted=0
+2023-04-28 11:26:58.458 [http-nio-8080-exec-27] DEBUG com.litao.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 11:26:58.457(Timestamp), 114(Long)
+2023-04-28 11:26:58.459 [http-nio-8080-exec-27] DEBUG com.litao.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 11:26:58.459(Timestamp), 113(Long)
+2023-04-28 11:26:58.459 [http-nio-8080-exec-27] DEBUG com.litao.dao.NoticeDao.deleteById - ==> Parameters: 10000(Long), 2023-04-28 11:26:58.459(Timestamp), 112(Long)
+2023-04-28 11:26:58.518 [http-nio-8080-exec-28] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:26:58.518 [http-nio-8080-exec-28] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:26:58.520 [http-nio-8080-exec-28] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:26:58.520 [http-nio-8080-exec-28] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?,?
+2023-04-28 11:26:58.521 [http-nio-8080-exec-28] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 96(Long), 12(Long)
+2023-04-28 11:26:58.522 [http-nio-8080-exec-28] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 3
+2023-04-28 11:36:32.956 [http-nio-8080-exec-1] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 11:36:32.956 [http-nio-8080-exec-1] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 11:36:32.960 [http-nio-8080-exec-1] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - <==      Total: 10
+2023-04-28 11:36:32.961 [http-nio-8080-exec-1] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 11:36:32.961 [http-nio-8080-exec-1] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 11:36:32.962 [http-nio-8080-exec-1] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 30
+2023-04-28 11:36:37.006 [http-nio-8080-exec-11] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 11:36:37.006 [http-nio-8080-exec-11] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 11:36:37.007 [http-nio-8080-exec-11] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 11:36:37.007 [http-nio-8080-exec-11] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 11:36:37.007 [http-nio-8080-exec-11] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 11:36:37.009 [http-nio-8080-exec-11] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:00:07.384 [http-nio-8080-exec-18] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-28 14:00:07.387 [http-nio-8080-exec-18] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==> Parameters: admin1(String)
+2023-04-28 14:00:07.394 [http-nio-8080-exec-18] DEBUG com.litao.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-28 14:00:07.397 [http-nio-8080-exec-18] DEBUG c.litao.rbac.dao.SysMenuDao.getUserAuthorityList - ==>  Preparing: SELECT t3.authority FROM sys_user_role t1 LEFT JOIN sys_role_menu t2 ON t1.role_id = t2.role_id LEFT JOIN sys_menu t3 ON t2.menu_id = t3.id WHERE t1.user_id = ? AND t1.deleted = 0 AND t2.deleted = 0 AND t3.deleted = 0 ORDER BY t3.sort
+2023-04-28 14:00:07.398 [http-nio-8080-exec-18] DEBUG c.litao.rbac.dao.SysMenuDao.getUserAuthorityList - ==> Parameters: 10001(Long)
+2023-04-28 14:00:07.401 [http-nio-8080-exec-18] DEBUG c.litao.rbac.dao.SysMenuDao.getUserAuthorityList - <==      Total: 4
+2023-04-28 14:00:07.497 [http-nio-8080-exec-18] DEBUG com.litao.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 14:00:07.498 [http-nio-8080-exec-18] DEBUG com.litao.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin1(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-28 14:00:07.496(Timestamp)
+2023-04-28 14:00:07.550 [http-nio-8080-exec-18] DEBUG com.litao.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-28 14:00:07.603 [http-nio-8080-exec-20] DEBUG com.litao.rbac.dao.SysMenuDao.getUserMenuList - ==>  Preparing: SELECT t3.* FROM sys_user_role t1 LEFT JOIN sys_role_menu t2 ON t1.role_id = t2.role_id LEFT JOIN sys_menu t3 ON t2.menu_id = t3.id WHERE t1.user_id = ? AND t1.deleted = 0 AND t2.deleted = 0 AND t3.deleted = 0 AND t3.type = ? ORDER BY t3.sort
+2023-04-28 14:00:07.603 [http-nio-8080-exec-20] DEBUG com.litao.rbac.dao.SysMenuDao.getUserMenuList - ==> Parameters: 10001(Long), 0(Integer)
+2023-04-28 14:00:07.605 [http-nio-8080-exec-20] DEBUG com.litao.rbac.dao.SysMenuDao.getUserMenuList - <==      Total: 3
+2023-04-28 14:00:07.606 [http-nio-8080-exec-20] DEBUG c.litao.rbac.dao.SysMenuDao.getUserAuthorityList - ==>  Preparing: SELECT t3.authority FROM sys_user_role t1 LEFT JOIN sys_role_menu t2 ON t1.role_id = t2.role_id LEFT JOIN sys_menu t3 ON t2.menu_id = t3.id WHERE t1.user_id = ? AND t1.deleted = 0 AND t2.deleted = 0 AND t3.deleted = 0 ORDER BY t3.sort
+2023-04-28 14:00:07.606 [http-nio-8080-exec-20] DEBUG c.litao.rbac.dao.SysMenuDao.getUserAuthorityList - ==> Parameters: 10001(Long)
+2023-04-28 14:00:07.607 [http-nio-8080-exec-20] DEBUG c.litao.rbac.dao.SysMenuDao.getUserAuthorityList - <==      Total: 4
+2023-04-28 14:00:10.729 [http-nio-8080-exec-30] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:00:10.730 [http-nio-8080-exec-30] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:00:10.731 [http-nio-8080-exec-30] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:00:10.732 [http-nio-8080-exec-30] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:00:10.733 [http-nio-8080-exec-30] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:00:10.735 [http-nio-8080-exec-30] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:00:18.596 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-28 14:00:18.596 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-28 14:00:18.597 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-28 14:00:18.598 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 14:00:18.598 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 14:00:18.598 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 30
+2023-04-28 14:00:18.678 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 14:00:18.679 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-28 14:00:18.678(Timestamp)
+2023-04-28 14:00:18.712 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-28 14:00:18.726 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 14:00:18.727 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 14:00:18.728 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - <==      Total: 10
+2023-04-28 14:00:18.729 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 14:00:18.729 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 14:00:18.729 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 30
+2023-04-28 14:00:35.032 [http-nio-8080-exec-14] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:00:35.032 [http-nio-8080-exec-14] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:00:35.033 [http-nio-8080-exec-14] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:00:35.033 [http-nio-8080-exec-14] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:00:35.034 [http-nio-8080-exec-14] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:00:35.035 [http-nio-8080-exec-14] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:00:40.693 [http-nio-8080-exec-20] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-28 14:00:40.693 [http-nio-8080-exec-20] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==> Parameters: admin1(String)
+2023-04-28 14:00:40.694 [http-nio-8080-exec-20] DEBUG com.litao.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-28 14:00:40.695 [http-nio-8080-exec-20] DEBUG c.litao.rbac.dao.SysMenuDao.getUserAuthorityList - ==>  Preparing: SELECT t3.authority FROM sys_user_role t1 LEFT JOIN sys_role_menu t2 ON t1.role_id = t2.role_id LEFT JOIN sys_menu t3 ON t2.menu_id = t3.id WHERE t1.user_id = ? AND t1.deleted = 0 AND t2.deleted = 0 AND t3.deleted = 0 ORDER BY t3.sort
+2023-04-28 14:00:40.695 [http-nio-8080-exec-20] DEBUG c.litao.rbac.dao.SysMenuDao.getUserAuthorityList - ==> Parameters: 10001(Long)
+2023-04-28 14:00:40.696 [http-nio-8080-exec-20] DEBUG c.litao.rbac.dao.SysMenuDao.getUserAuthorityList - <==      Total: 4
+2023-04-28 14:00:40.777 [http-nio-8080-exec-20] DEBUG com.litao.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 14:00:40.778 [http-nio-8080-exec-20] DEBUG com.litao.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin1(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-28 14:00:40.777(Timestamp)
+2023-04-28 14:00:40.814 [http-nio-8080-exec-20] DEBUG com.litao.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-28 14:00:40.826 [http-nio-8080-exec-22] DEBUG com.litao.rbac.dao.SysMenuDao.getUserMenuList - ==>  Preparing: SELECT t3.* FROM sys_user_role t1 LEFT JOIN sys_role_menu t2 ON t1.role_id = t2.role_id LEFT JOIN sys_menu t3 ON t2.menu_id = t3.id WHERE t1.user_id = ? AND t1.deleted = 0 AND t2.deleted = 0 AND t3.deleted = 0 AND t3.type = ? ORDER BY t3.sort
+2023-04-28 14:00:40.827 [http-nio-8080-exec-22] DEBUG com.litao.rbac.dao.SysMenuDao.getUserMenuList - ==> Parameters: 10001(Long), 0(Integer)
+2023-04-28 14:00:40.828 [http-nio-8080-exec-22] DEBUG com.litao.rbac.dao.SysMenuDao.getUserMenuList - <==      Total: 3
+2023-04-28 14:00:40.829 [http-nio-8080-exec-22] DEBUG c.litao.rbac.dao.SysMenuDao.getUserAuthorityList - ==>  Preparing: SELECT t3.authority FROM sys_user_role t1 LEFT JOIN sys_role_menu t2 ON t1.role_id = t2.role_id LEFT JOIN sys_menu t3 ON t2.menu_id = t3.id WHERE t1.user_id = ? AND t1.deleted = 0 AND t2.deleted = 0 AND t3.deleted = 0 ORDER BY t3.sort
+2023-04-28 14:00:40.829 [http-nio-8080-exec-22] DEBUG c.litao.rbac.dao.SysMenuDao.getUserAuthorityList - ==> Parameters: 10001(Long)
+2023-04-28 14:00:40.830 [http-nio-8080-exec-22] DEBUG c.litao.rbac.dao.SysMenuDao.getUserAuthorityList - <==      Total: 4
+2023-04-28 14:00:42.655 [http-nio-8080-exec-30] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM t_notice WHERE deleted = 0
+2023-04-28 14:00:42.655 [http-nio-8080-exec-30] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - ==> Parameters: 
+2023-04-28 14:00:42.656 [http-nio-8080-exec-30] DEBUG com.litao.dao.NoticeDao.selectPage_mpCount - <==      Total: 1
+2023-04-28 14:00:42.657 [http-nio-8080-exec-30] DEBUG com.litao.dao.NoticeDao.selectPage - ==>  Preparing: SELECT id,title,content,creator,create_time,updater,update_time,deleted FROM t_notice WHERE deleted=0 LIMIT ?
+2023-04-28 14:00:42.657 [http-nio-8080-exec-30] DEBUG com.litao.dao.NoticeDao.selectPage - ==> Parameters: 12(Long)
+2023-04-28 14:00:42.659 [http-nio-8080-exec-30] DEBUG com.litao.dao.NoticeDao.selectPage - <==      Total: 12
+2023-04-28 14:00:50.320 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-28 14:00:50.321 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-28 14:00:50.322 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-28 14:00:50.322 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 14:00:50.322 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 14:00:50.323 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 30
+2023-04-28 14:00:50.402 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 14:00:50.403 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-28 14:00:50.402(Timestamp)
+2023-04-28 14:00:50.414 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-28 14:00:50.428 [http-nio-8080-exec-8] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 14:00:50.428 [http-nio-8080-exec-8] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 14:00:50.429 [http-nio-8080-exec-8] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - <==      Total: 10
+2023-04-28 14:00:50.430 [http-nio-8080-exec-8] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 14:00:50.430 [http-nio-8080-exec-8] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 14:00:50.431 [http-nio-8080-exec-8] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 30
+2023-04-28 14:01:09.722 [http-nio-8080-exec-20] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-28 14:01:09.722 [http-nio-8080-exec-20] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==> Parameters: admin1(String)
+2023-04-28 14:01:09.723 [http-nio-8080-exec-20] DEBUG com.litao.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-28 14:01:09.724 [http-nio-8080-exec-20] DEBUG c.litao.rbac.dao.SysMenuDao.getUserAuthorityList - ==>  Preparing: SELECT t3.authority FROM sys_user_role t1 LEFT JOIN sys_role_menu t2 ON t1.role_id = t2.role_id LEFT JOIN sys_menu t3 ON t2.menu_id = t3.id WHERE t1.user_id = ? AND t1.deleted = 0 AND t2.deleted = 0 AND t3.deleted = 0 ORDER BY t3.sort
+2023-04-28 14:01:09.724 [http-nio-8080-exec-20] DEBUG c.litao.rbac.dao.SysMenuDao.getUserAuthorityList - ==> Parameters: 10001(Long)
+2023-04-28 14:01:09.725 [http-nio-8080-exec-20] DEBUG c.litao.rbac.dao.SysMenuDao.getUserAuthorityList - <==      Total: 4
+2023-04-28 14:01:09.803 [http-nio-8080-exec-20] DEBUG com.litao.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 14:01:09.805 [http-nio-8080-exec-20] DEBUG com.litao.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin1(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-28 14:01:09.803(Timestamp)
+2023-04-28 14:01:09.861 [http-nio-8080-exec-20] DEBUG com.litao.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-28 14:01:09.873 [http-nio-8080-exec-22] DEBUG com.litao.rbac.dao.SysMenuDao.getUserMenuList - ==>  Preparing: SELECT t3.* FROM sys_user_role t1 LEFT JOIN sys_role_menu t2 ON t1.role_id = t2.role_id LEFT JOIN sys_menu t3 ON t2.menu_id = t3.id WHERE t1.user_id = ? AND t1.deleted = 0 AND t2.deleted = 0 AND t3.deleted = 0 AND t3.type = ? ORDER BY t3.sort
+2023-04-28 14:01:09.874 [http-nio-8080-exec-22] DEBUG com.litao.rbac.dao.SysMenuDao.getUserMenuList - ==> Parameters: 10001(Long), 0(Integer)
+2023-04-28 14:01:09.875 [http-nio-8080-exec-22] DEBUG com.litao.rbac.dao.SysMenuDao.getUserMenuList - <==      Total: 3
+2023-04-28 14:01:09.875 [http-nio-8080-exec-22] DEBUG c.litao.rbac.dao.SysMenuDao.getUserAuthorityList - ==>  Preparing: SELECT t3.authority FROM sys_user_role t1 LEFT JOIN sys_role_menu t2 ON t1.role_id = t2.role_id LEFT JOIN sys_menu t3 ON t2.menu_id = t3.id WHERE t1.user_id = ? AND t1.deleted = 0 AND t2.deleted = 0 AND t3.deleted = 0 ORDER BY t3.sort
+2023-04-28 14:01:09.876 [http-nio-8080-exec-22] DEBUG c.litao.rbac.dao.SysMenuDao.getUserAuthorityList - ==> Parameters: 10001(Long)
+2023-04-28 14:01:09.876 [http-nio-8080-exec-22] DEBUG c.litao.rbac.dao.SysMenuDao.getUserAuthorityList - <==      Total: 4
+2023-04-28 14:03:29.774 [http-nio-8080-exec-5] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-28 14:03:29.775 [http-nio-8080-exec-5] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==> Parameters: admin(String)
+2023-04-28 14:03:29.775 [http-nio-8080-exec-5] DEBUG com.litao.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-28 14:03:29.776 [http-nio-8080-exec-5] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 14:03:29.776 [http-nio-8080-exec-5] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 14:03:29.776 [http-nio-8080-exec-5] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 30
+2023-04-28 14:03:29.857 [http-nio-8080-exec-5] DEBUG com.litao.rbac.dao.SysLogLoginDao.insert - ==>  Preparing: INSERT INTO sys_log_login ( username, ip, address, user_agent, status, operation, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 14:03:29.857 [http-nio-8080-exec-5] DEBUG com.litao.rbac.dao.SysLogLoginDao.insert - ==> Parameters: admin(String), 127.0.0.1(String), 内网IP(String), Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36(String), 1(Integer), 0(Integer), 2023-04-28 14:03:29.856(Timestamp)
+2023-04-28 14:03:29.893 [http-nio-8080-exec-5] DEBUG com.litao.rbac.dao.SysLogLoginDao.insert - <==    Updates: 1
+2023-04-28 14:03:29.905 [http-nio-8080-exec-9] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 14:03:29.905 [http-nio-8080-exec-9] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 14:03:29.906 [http-nio-8080-exec-9] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - <==      Total: 10
+2023-04-28 14:03:29.907 [http-nio-8080-exec-9] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 14:03:29.907 [http-nio-8080-exec-9] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 14:03:29.908 [http-nio-8080-exec-9] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 30
+2023-04-28 15:42:49.015 [http-nio-8080-exec-26] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==>  Preparing: SELECT * FROM sys_menu WHERE deleted = 0 AND type = ? ORDER BY sort
+2023-04-28 15:42:49.021 [http-nio-8080-exec-26] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - ==> Parameters: 0(Integer)
+2023-04-28 15:42:49.041 [http-nio-8080-exec-26] DEBUG com.litao.rbac.dao.SysMenuDao.getMenuList - <==      Total: 10
+2023-04-28 15:42:49.042 [http-nio-8080-exec-26] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==>  Preparing: SELECT authority FROM sys_menu WHERE deleted = 0
+2023-04-28 15:42:49.043 [http-nio-8080-exec-26] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - ==> Parameters: 
+2023-04-28 15:42:49.043 [http-nio-8080-exec-26] DEBUG com.litao.rbac.dao.SysMenuDao.getAuthorityList - <==      Total: 30
+2023-04-28 16:09:40.149 [main] DEBUG com.litao.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 16:09:42.122 [main] DEBUG c.litao.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 16:10:57.608 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysUserDao.getList_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM sys_user t1 WHERE t1.super_admin = 0 AND t1.deleted = 0 AND t1.gender = ?
+2023-04-28 16:10:57.627 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysUserDao.getList_mpCount - ==> Parameters: 0(Integer)
+2023-04-28 16:10:57.644 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysUserDao.getList_mpCount - <==      Total: 1
+2023-04-28 16:10:57.651 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysUserDao.getList - ==>  Preparing: SELECT t1.* FROM sys_user t1 WHERE t1.super_admin=0 AND t1.deleted=0 AND t1.gender=? LIMIT ?
+2023-04-28 16:10:57.652 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysUserDao.getList - ==> Parameters: 0(Integer), 10(Long)
+2023-04-28 16:10:57.655 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysUserDao.getList - <==      Total: 2
+2023-04-28 16:11:45.177 [http-nio-8080-exec-13] DEBUG com.litao.rbac.dao.SysUserDao.getList_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM sys_user t1 WHERE t1.super_admin = 0 AND t1.deleted = 0 AND t1.gender = ?
+2023-04-28 16:11:45.178 [http-nio-8080-exec-13] DEBUG com.litao.rbac.dao.SysUserDao.getList_mpCount - ==> Parameters: 0(Integer)
+2023-04-28 16:11:45.180 [http-nio-8080-exec-13] DEBUG com.litao.rbac.dao.SysUserDao.getList_mpCount - <==      Total: 1
+2023-04-28 16:11:45.181 [http-nio-8080-exec-13] DEBUG com.litao.rbac.dao.SysUserDao.getList - ==>  Preparing: SELECT t1.* FROM sys_user t1 WHERE t1.super_admin=0 AND t1.deleted=0 AND t1.gender=? LIMIT ?
+2023-04-28 16:11:45.182 [http-nio-8080-exec-13] DEBUG com.litao.rbac.dao.SysUserDao.getList - ==> Parameters: 0(Integer), 12(Long)
+2023-04-28 16:11:45.186 [http-nio-8080-exec-13] DEBUG com.litao.rbac.dao.SysUserDao.getList - <==      Total: 2
+2023-04-28 16:12:41.325 [main] DEBUG com.litao.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 16:12:43.191 [main] DEBUG c.litao.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 16:12:53.174 [http-nio-8080-exec-6] DEBUG com.litao.rbac.dao.SysUserDao.getList_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM sys_user t1 WHERE t1.super_admin = 0 AND t1.deleted = 0
+2023-04-28 16:12:53.193 [http-nio-8080-exec-6] DEBUG com.litao.rbac.dao.SysUserDao.getList_mpCount - ==> Parameters: 
+2023-04-28 16:12:53.213 [http-nio-8080-exec-6] DEBUG com.litao.rbac.dao.SysUserDao.getList_mpCount - <==      Total: 1
+2023-04-28 16:12:53.221 [http-nio-8080-exec-6] DEBUG com.litao.rbac.dao.SysUserDao.getList - ==>  Preparing: SELECT t1.* FROM sys_user t1 WHERE t1.super_admin=0 AND t1.deleted=0 LIMIT ?
+2023-04-28 16:12:53.222 [http-nio-8080-exec-6] DEBUG com.litao.rbac.dao.SysUserDao.getList - ==> Parameters: 12(Long)
+2023-04-28 16:12:53.231 [http-nio-8080-exec-6] DEBUG com.litao.rbac.dao.SysUserDao.getList - <==      Total: 5
+2023-04-28 16:13:23.204 [http-nio-8080-exec-18] DEBUG com.litao.rbac.dao.SysUserDao.selectById - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE id=? AND deleted=0
+2023-04-28 16:13:23.205 [http-nio-8080-exec-18] DEBUG com.litao.rbac.dao.SysUserDao.selectById - ==> Parameters: 10002(Long)
+2023-04-28 16:13:23.207 [http-nio-8080-exec-18] DEBUG com.litao.rbac.dao.SysUserDao.selectById - <==      Total: 1
+2023-04-28 16:19:42.475 [main] DEBUG com.litao.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 16:19:44.333 [main] DEBUG c.litao.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 16:20:01.969 [http-nio-8080-exec-18] DEBUG com.litao.rbac.dao.SysUserDao.selectById - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE id=? AND deleted=0
+2023-04-28 16:20:01.989 [http-nio-8080-exec-18] DEBUG com.litao.rbac.dao.SysUserDao.selectById - ==> Parameters: 10002(Long)
+2023-04-28 16:20:02.007 [http-nio-8080-exec-18] DEBUG com.litao.rbac.dao.SysUserDao.selectById - <==      Total: 1
+2023-04-28 16:20:02.014 [http-nio-8080-exec-18] DEBUG com.litao.rbac.dao.SysUserRoleDao.getRoleIdList - ==>  Preparing: SELECT t1.role_id FROM sys_user_role t1 WHERE t1.user_id=?
+2023-04-28 16:20:02.015 [http-nio-8080-exec-18] DEBUG com.litao.rbac.dao.SysUserRoleDao.getRoleIdList - ==> Parameters: 10002(Long)
+2023-04-28 16:20:02.018 [http-nio-8080-exec-18] DEBUG com.litao.rbac.dao.SysUserRoleDao.getRoleIdList - <==      Total: 1
+2023-04-28 16:21:50.256 [http-nio-8080-exec-30] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-28 16:21:50.257 [http-nio-8080-exec-30] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==> Parameters: eeee(String)
+2023-04-28 16:21:50.258 [http-nio-8080-exec-30] DEBUG com.litao.rbac.dao.SysUserDao.selectList - <==      Total: 0
+2023-04-28 16:21:50.261 [http-nio-8080-exec-30] DEBUG com.litao.rbac.dao.SysUserDao.selectByMap - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE mobile = ? AND deleted=0
+2023-04-28 16:21:50.262 [http-nio-8080-exec-30] DEBUG com.litao.rbac.dao.SysUserDao.selectByMap - ==> Parameters: 1234567(String)
+2023-04-28 16:21:50.263 [http-nio-8080-exec-30] DEBUG com.litao.rbac.dao.SysUserDao.selectByMap - <==      Total: 0
+2023-04-28 16:23:13.832 [main] DEBUG com.litao.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 16:23:15.799 [main] DEBUG c.litao.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 16:23:29.763 [http-nio-8080-exec-19] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-28 16:23:29.781 [http-nio-8080-exec-19] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==> Parameters: eeee(String)
+2023-04-28 16:23:29.796 [http-nio-8080-exec-19] DEBUG com.litao.rbac.dao.SysUserDao.selectList - <==      Total: 0
+2023-04-28 16:23:29.802 [http-nio-8080-exec-19] DEBUG com.litao.rbac.dao.SysUserDao.selectByMap - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE mobile = ? AND deleted=0
+2023-04-28 16:23:29.802 [http-nio-8080-exec-19] DEBUG com.litao.rbac.dao.SysUserDao.selectByMap - ==> Parameters: 1234567(String)
+2023-04-28 16:23:29.804 [http-nio-8080-exec-19] DEBUG com.litao.rbac.dao.SysUserDao.selectByMap - <==      Total: 0
+2023-04-28 16:24:16.334 [main] DEBUG com.litao.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 16:24:18.186 [main] DEBUG c.litao.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 16:24:26.819 [http-nio-8080-exec-1] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-28 16:24:26.839 [http-nio-8080-exec-1] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==> Parameters: eeee(String)
+2023-04-28 16:24:26.857 [http-nio-8080-exec-1] DEBUG com.litao.rbac.dao.SysUserDao.selectList - <==      Total: 0
+2023-04-28 16:24:26.866 [http-nio-8080-exec-1] DEBUG com.litao.rbac.dao.SysUserDao.selectByMap - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE mobile = ? AND deleted=0
+2023-04-28 16:24:26.867 [http-nio-8080-exec-1] DEBUG com.litao.rbac.dao.SysUserDao.selectByMap - ==> Parameters: 1234567(String)
+2023-04-28 16:24:26.869 [http-nio-8080-exec-1] DEBUG com.litao.rbac.dao.SysUserDao.selectByMap - <==      Total: 0
+2023-04-28 16:25:09.173 [http-nio-8080-exec-12] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-28 16:25:09.174 [http-nio-8080-exec-12] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==> Parameters: eeee(String)
+2023-04-28 16:25:09.175 [http-nio-8080-exec-12] DEBUG com.litao.rbac.dao.SysUserDao.selectList - <==      Total: 0
+2023-04-28 16:25:09.176 [http-nio-8080-exec-12] DEBUG com.litao.rbac.dao.SysUserDao.selectByMap - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE mobile = ? AND deleted=0
+2023-04-28 16:25:09.176 [http-nio-8080-exec-12] DEBUG com.litao.rbac.dao.SysUserDao.selectByMap - ==> Parameters: 1234567(String)
+2023-04-28 16:25:09.177 [http-nio-8080-exec-12] DEBUG com.litao.rbac.dao.SysUserDao.selectByMap - <==      Total: 0
+2023-04-28 16:25:52.104 [main] DEBUG com.litao.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 16:25:53.992 [main] DEBUG c.litao.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 16:25:59.738 [http-nio-8080-exec-1] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-28 16:25:59.756 [http-nio-8080-exec-1] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==> Parameters: eeee(String)
+2023-04-28 16:25:59.770 [http-nio-8080-exec-1] DEBUG com.litao.rbac.dao.SysUserDao.selectList - <==      Total: 0
+2023-04-28 16:25:59.776 [http-nio-8080-exec-1] DEBUG com.litao.rbac.dao.SysUserDao.selectByMap - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE mobile = ? AND deleted=0
+2023-04-28 16:25:59.778 [http-nio-8080-exec-1] DEBUG com.litao.rbac.dao.SysUserDao.selectByMap - ==> Parameters: 1234567(String)
+2023-04-28 16:25:59.779 [http-nio-8080-exec-1] DEBUG com.litao.rbac.dao.SysUserDao.selectByMap - <==      Total: 0
+2023-04-28 16:26:16.619 [main] DEBUG com.litao.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 16:26:18.500 [main] DEBUG c.litao.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 16:26:28.884 [http-nio-8080-exec-5] DEBUG com.litao.rbac.dao.SysUserDao.getList_mpCount - ==>  Preparing: SELECT COUNT(*) AS total FROM sys_user t1 WHERE t1.super_admin = 0 AND t1.deleted = 0
+2023-04-28 16:26:28.901 [http-nio-8080-exec-5] DEBUG com.litao.rbac.dao.SysUserDao.getList_mpCount - ==> Parameters: 
+2023-04-28 16:26:28.917 [http-nio-8080-exec-5] DEBUG com.litao.rbac.dao.SysUserDao.getList_mpCount - <==      Total: 1
+2023-04-28 16:26:28.925 [http-nio-8080-exec-5] DEBUG com.litao.rbac.dao.SysUserDao.getList - ==>  Preparing: SELECT t1.* FROM sys_user t1 WHERE t1.super_admin=0 AND t1.deleted=0 LIMIT ?
+2023-04-28 16:26:28.926 [http-nio-8080-exec-5] DEBUG com.litao.rbac.dao.SysUserDao.getList - ==> Parameters: 12(Long)
+2023-04-28 16:26:28.933 [http-nio-8080-exec-5] DEBUG com.litao.rbac.dao.SysUserDao.getList - <==      Total: 5
+2023-04-28 16:26:36.086 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-28 16:26:36.087 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==> Parameters: eeee(String)
+2023-04-28 16:26:36.089 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysUserDao.selectList - <==      Total: 0
+2023-04-28 16:26:36.094 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysUserDao.selectByMap - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE mobile = ? AND deleted=0
+2023-04-28 16:26:36.095 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysUserDao.selectByMap - ==> Parameters: 1234567(String)
+2023-04-28 16:26:36.096 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysUserDao.selectByMap - <==      Total: 0
+2023-04-28 16:26:36.101 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysUserDao.insert - ==>  Preparing: INSERT INTO sys_user ( id, username, password, real_name, avatar, gender, email, mobile, super_admin, status, creator, create_time, updater, update_time, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 16:26:36.102 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysUserDao.insert - ==> Parameters: 0(Long), eeee(String), {bcrypt}$2a$10$xUSBubQb6JNFFdSAoiYx..1kBJXSIVu7p1ymuVYNOqSbnxx5lPJsy(String), 李涛(String), (String), 0(Integer), (String), 1234567(String), 0(Integer), 0(Integer), 10000(Long), 2023-04-28 16:26:36.099(Timestamp), 10000(Long), 2023-04-28 16:26:36.099(Timestamp), 0(Integer)
+2023-04-28 16:26:36.107 [http-nio-8080-exec-4] DEBUG com.litao.rbac.dao.SysUserDao.insert - <==    Updates: 1
+2023-04-28 16:26:58.318 [http-nio-8080-exec-10] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-28 16:26:58.319 [http-nio-8080-exec-10] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==> Parameters: eeee(String)
+2023-04-28 16:26:58.321 [http-nio-8080-exec-10] DEBUG com.litao.rbac.dao.SysUserDao.selectList - <==      Total: 1
+2023-04-28 16:27:10.835 [http-nio-8080-exec-12] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (username = ?)
+2023-04-28 16:27:10.836 [http-nio-8080-exec-12] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==> Parameters: fffff(String)
+2023-04-28 16:27:10.836 [http-nio-8080-exec-12] DEBUG com.litao.rbac.dao.SysUserDao.selectList - <==      Total: 0
+2023-04-28 16:27:10.837 [http-nio-8080-exec-12] DEBUG com.litao.rbac.dao.SysUserDao.selectByMap - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE mobile = ? AND deleted=0
+2023-04-28 16:27:10.837 [http-nio-8080-exec-12] DEBUG com.litao.rbac.dao.SysUserDao.selectByMap - ==> Parameters: 1234567(String)
+2023-04-28 16:27:10.839 [http-nio-8080-exec-12] DEBUG com.litao.rbac.dao.SysUserDao.selectByMap - <==      Total: 1
+2023-04-28 16:28:06.751 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysUserDao.getByid - ==>  Preparing: SELECT t1.* FROM sys_user t1 WHERE t1.id=? AND t1.deleted=0
+2023-04-28 16:28:06.751 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysUserDao.getByid - ==> Parameters: 10006(Long)
+2023-04-28 16:28:06.753 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysUserDao.getByid - <==      Total: 1
+2023-04-28 16:28:06.763 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysUserDao.updateById - ==>  Preparing: UPDATE sys_user SET username=?, real_name=?, avatar=?, gender=?, email=?, mobile=?, super_admin=?, status=?, updater=?, update_time=? WHERE id=? AND deleted=0
+2023-04-28 16:28:06.764 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysUserDao.updateById - ==> Parameters: ffff(String), 李涛1(String), (String), 0(Integer), (String), 45632157(String), 0(Integer), 0(Integer), 10000(Long), 2023-04-28 16:28:06.756(Timestamp), 10006(Long)
+2023-04-28 16:28:06.798 [http-nio-8080-exec-7] DEBUG com.litao.rbac.dao.SysUserDao.updateById - <==    Updates: 1
+2023-04-28 16:28:25.686 [http-nio-8080-exec-2] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (super_admin = ?)
+2023-04-28 16:28:25.687 [http-nio-8080-exec-2] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==> Parameters: 0(Integer)
+2023-04-28 16:28:25.692 [http-nio-8080-exec-2] DEBUG com.litao.rbac.dao.SysUserDao.selectList - <==      Total: 6
+2023-04-28 16:29:18.096 [http-nio-8080-exec-6] DEBUG com.litao.rbac.dao.SysUserDao.insert - ==>  Preparing: INSERT INTO sys_user ( username, password, real_name, gender, email, mobile, status, creator, create_time, updater, update_time, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 16:29:18.099 [http-nio-8080-exec-6] DEBUG com.litao.rbac.dao.SysUserDao.insert - ==> Parameters: admin1(String), {bcrypt}$2a$10$NcS3R5KOROlFmN6JJc35Y.LKJnNnEAtYTUBUPFMPLsHGdhLKdyppe(String), admin1(String), 2(Integer), admin1@qq.com(String), 13911112222(String), 1(Integer), 10000(Long), 2023-04-09 18:03:51.0(Timestamp), 10000(Long), 2023-04-28 16:29:18.096(Timestamp), 0(Integer)
+2023-04-28 16:29:18.101 [http-nio-8080-exec-6] DEBUG com.litao.rbac.dao.SysUserDao.insert - ==> Parameters: admin2(String), {bcrypt}$2a$10$NcS3R5KOROlFmN6JJc35Y.LKJnNnEAtYTUBUPFMPLsHGdhLKdyppe(String), admin2(String), 0(Integer), admin2@qq.com(String), 13900001111(String), 1(Integer), 10000(Long), 2023-04-18 19:27:17.0(Timestamp), 10000(Long), 2023-04-28 16:29:18.101(Timestamp), 0(Integer)
+2023-04-28 16:29:18.104 [http-nio-8080-exec-6] DEBUG com.litao.rbac.dao.SysUserDao.insert - ==> Parameters: bbb(String), {bcrypt}$2a$10$NcS3R5KOROlFmN6JJc35Y.LKJnNnEAtYTUBUPFMPLsHGdhLKdyppe(String), bbb(String), 1(Integer), bbb@qq.com(String), 13911112222(String), 1(Integer), 10000(Long), 2023-04-18 19:28:14.0(Timestamp), 10000(Long), 2023-04-28 16:29:18.102(Timestamp), 0(Integer)
+2023-04-28 16:29:18.107 [http-nio-8080-exec-6] DEBUG com.litao.rbac.dao.SysUserDao.insert - ==> Parameters: ccc(String), {bcrypt}$2a$10$NcS3R5KOROlFmN6JJc35Y.LKJnNnEAtYTUBUPFMPLsHGdhLKdyppe(String), ccc(String), 0(Integer), ccc@qq.com(String), 13933334444(String), 1(Integer), 10000(Long), 2023-04-18 19:35:04.0(Timestamp), 10000(Long), 2023-04-28 16:29:18.107(Timestamp), 0(Integer)
+2023-04-28 16:29:18.109 [http-nio-8080-exec-6] DEBUG com.litao.rbac.dao.SysUserDao.insert - ==> Parameters: ddd(String), {bcrypt}$2a$10$NcS3R5KOROlFmN6JJc35Y.LKJnNnEAtYTUBUPFMPLsHGdhLKdyppe(String), ddd(String), 1(Integer), ddd@qq.com(String), 13955556666(String), 1(Integer), 10000(Long), 2023-04-18 19:35:56.0(Timestamp), 10000(Long), 2023-04-28 16:29:18.108(Timestamp), 0(Integer)
+2023-04-28 16:29:18.111 [http-nio-8080-exec-6] DEBUG com.litao.rbac.dao.SysUserDao.insert - ==>  Preparing: INSERT INTO sys_user ( username, password, real_name, gender, mobile, status, creator, create_time, updater, update_time, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 16:29:18.112 [http-nio-8080-exec-6] DEBUG com.litao.rbac.dao.SysUserDao.insert - ==> Parameters: ffff(String), {bcrypt}$2a$10$NcS3R5KOROlFmN6JJc35Y.LKJnNnEAtYTUBUPFMPLsHGdhLKdyppe(String), 李涛1(String), 0(Integer), 45632157(String), 0(Integer), 10000(Long), 2023-04-28 16:26:36.0(Timestamp), 10000(Long), 2023-04-28 16:29:18.11(Timestamp), 0(Integer)
+2023-04-28 16:40:58.544 [main] DEBUG com.litao.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 16:41:00.502 [main] DEBUG c.litao.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 16:41:14.083 [http-nio-8080-exec-12] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (super_admin = ?)
+2023-04-28 16:41:14.134 [http-nio-8080-exec-12] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==> Parameters: 0(Integer)
+2023-04-28 16:41:14.180 [http-nio-8080-exec-12] DEBUG com.litao.rbac.dao.SysUserDao.selectList - <==      Total: 5
+2023-04-28 16:41:52.691 [main] DEBUG com.litao.ServerApplication - Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-04-28 16:41:54.559 [main] DEBUG c.litao.security.filter.AuthenticationTokenFilter - Filter 'authenticationTokenFilter' configured for use
+2023-04-28 16:42:10.411 [http-nio-8080-exec-17] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==>  Preparing: SELECT id,username,password,real_name,avatar,gender,email,mobile,super_admin,status,creator,create_time,updater,update_time,deleted FROM sys_user WHERE deleted=0 AND (super_admin = ?)
+2023-04-28 16:42:10.462 [http-nio-8080-exec-17] DEBUG com.litao.rbac.dao.SysUserDao.selectList - ==> Parameters: 0(Integer)
+2023-04-28 16:42:10.511 [http-nio-8080-exec-17] DEBUG com.litao.rbac.dao.SysUserDao.selectList - <==      Total: 5
+2023-04-28 16:42:48.997 [http-nio-8080-exec-27] DEBUG com.litao.rbac.dao.SysUserDao.insert - ==>  Preparing: INSERT INTO sys_user ( username, password, real_name, gender, email, mobile, status, creator, create_time, updater, update_time, deleted ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+2023-04-28 16:42:49.000 [http-nio-8080-exec-27] DEBUG com.litao.rbac.dao.SysUserDao.insert - ==> Parameters: admin1(String), {bcrypt}$2a$10$.AfVnkVezkfaneOdLjXVIec6pPd53Y.Q7mXLUqL3k3G7E6h9j8Jbi(String), admin1(String), 2(Integer), admin1@qq.com(String), 13911112222(String), 1(Integer), 10000(Long), 2023-04-09 18:03:51.0(Timestamp), 10000(Long), 2023-04-28 16:42:48.995(Timestamp), 0(Integer)
+2023-04-28 16:42:49.001 [http-nio-8080-exec-27] DEBUG com.litao.rbac.dao.SysUserDao.insert - ==> Parameters: admin2(String), {bcrypt}$2a$10$.AfVnkVezkfaneOdLjXVIec6pPd53Y.Q7mXLUqL3k3G7E6h9j8Jbi(String), admin2(String), 0(Integer), admin2@qq.com(String), 13900001111(String), 1(Integer), 10000(Long), 2023-04-18 19:27:17.0(Timestamp), 10000(Long), 2023-04-28 16:42:49.0(Timestamp), 0(Integer)
+2023-04-28 16:42:49.003 [http-nio-8080-exec-27] DEBUG com.litao.rbac.dao.SysUserDao.insert - ==> Parameters: bbb(String), {bcrypt}$2a$10$.AfVnkVezkfaneOdLjXVIec6pPd53Y.Q7mXLUqL3k3G7E6h9j8Jbi(String), bbb(String), 1(Integer), bbb@qq.com(String), 13911112222(String), 1(Integer), 10000(Long), 2023-04-18 19:28:14.0(Timestamp), 10000(Long), 2023-04-28 16:42:49.002(Timestamp), 0(Integer)
+2023-04-28 16:42:49.004 [http-nio-8080-exec-27] DEBUG com.litao.rbac.dao.SysUserDao.insert - ==> Parameters: ccc(String), {bcrypt}$2a$10$.AfVnkVezkfaneOdLjXVIec6pPd53Y.Q7mXLUqL3k3G7E6h9j8Jbi(String), ccc(String), 0(Integer), ccc@qq.com(String), 13933334444(String), 1(Integer), 10000(Long), 2023-04-18 19:35:04.0(Timestamp), 10000(Long), 2023-04-28 16:42:49.003(Timestamp), 0(Integer)
+2023-04-28 16:42:49.007 [http-nio-8080-exec-27] DEBUG com.litao.rbac.dao.SysUserDao.insert - ==> Parameters: ddd(String), {bcrypt}$2a$10$.AfVnkVezkfaneOdLjXVIec6pPd53Y.Q7mXLUqL3k3G7E6h9j8Jbi(String), ddd(String), 1(Integer), ddd@qq.com(String), 13955556666(String), 1(Integer), 10000(Long), 2023-04-18 19:35:56.0(Timestamp), 10000(Long), 2023-04-28 16:42:49.004(Timestamp), 0(Integer)

@@ -77,7 +77,7 @@ public class NoticeController {
         return Result.ok();
     }
 
-    @DeleteMapping("deletemulti")
+    @PostMapping("deletemulti")
     @Operation(summary = "删除通知")
     @PreAuthorize("hasAuthority('sys:notice:delete')")
     public Result<String> delete(@RequestBody List<Long> ids) {

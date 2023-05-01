@@ -22,6 +22,7 @@ import com.litao.rbac.service.SysUserService;
 import com.litao.rbac.vo.SysUserExeclVO;
 import com.litao.rbac.vo.SysUserVO;
 import lombok.AllArgsConstructor;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
@@ -65,8 +66,11 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUserDao, SysUserEntit
     private Map<String,Object> getParams(SysUserQuery query){
         Map<String,Object> parmas=new HashMap<>();
         parmas.put("username",query.getUsername());
+        parmas.put("realName",query.getRealName());
         parmas.put("mobile",query.getMobile());
         parmas.put("gender",query.getGender());
+        parmas.put("beginTime",query.getBeginTime());
+        parmas.put("endTime",query.getEndTime());
         return parmas;
     }
 
@@ -83,16 +87,12 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUserDao, SysUserEntit
             throw new ServerException("用户名已存在");
         }
         //TODO：判断手机号是否存在
-        Map<String,Object> mobilemap=new HashMap<>();
-        System.out.println("mobile:"+entity.getMobile());
-        mobilemap.put("mobile",entity.getMobile());
-        List<SysUserEntity> list = baseMapper.selectByMap(mobilemap);
-        System.out.println("size:"+list.size());
-
-        if(list.size()>0){
+        SysUserEntity user=baseMapper.getByMobile(entity.getMobile());
+        if(user !=null){
             throw new ServerException("手机号已存在");
         }
 
+        //保存用户
         baseMapper.insert(entity);
 
     }
@@ -100,16 +100,38 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUserDao, SysUserEntit
     @Override
     public void update(SysUserVO vo) {
         SysUserEntity entity = SysUserConvert.INSTANCE.convert(vo);
+
+
         //判断用户是否存在
-        SysUserEntity byid = baseMapper.getByid(entity.getId());
-        if(byid==null){
-            throw  new ServerException("用户不存在");
+        SysUserEntity user = baseMapper.getByUsername(entity.getUsername());
+        if(user!=null&& !user.getId().equals(entity.getId())){
+            throw  new ServerException("用户已存在");
         }
+
+        //判断手机号是否存在
+        user=baseMapper.getByMobile(entity.getMobile());
+        if(user!=null&&!user.getId().equals(entity.getId())){
+            throw  new ServerException("手机号已经存在");
+        }
+
+        //更新用户
         updateById(entity);
     }
 
     @Override
-    public void delete(List<Long> ids) {
+    public void updateStatus(long id, int status) {
+        SysUserEntity entity = baseMapper.getByid(id);
+        entity.setStatus(status);
+        baseMapper.updateById(entity);
+    }
+
+    @Override
+    public void delete(Long id) {
+        removeById(id);
+    }
+
+    @Override
+    public void deleteSelectAll(List<Long> ids) {
         //批量删除用户
         removeByIds(ids);
     }
@@ -131,7 +153,9 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUserDao, SysUserEntit
             private void saveUser(List<SysUserExeclVO> result){
                 List<SysUserEntity> userEntities = SysUserConvert.INSTANCE.convertListEntity(result);
                 //给每个导入的用户设置初始化密码
-                userEntities.forEach(item-> item.setPassword(password));
+                userEntities.forEach(item-> {
+                    item.setSuperAdmin(0);
+                    item.setPassword(password);});
                 //批量新增
                 saveBatch(userEntities);
             }

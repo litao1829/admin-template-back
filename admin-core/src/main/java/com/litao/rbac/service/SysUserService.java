@@ -49,12 +49,29 @@ public interface SysUserService extends BaseService<SysUserEntity> {
      */
     void update(SysUserVO vo);
 
+
+    /**
+     * 修改用户状态
+     *
+     * @param id  用户id
+     * @param status 需要修改的状态
+     */
+    void updateStatus(long id,int status);
+
+    /**
+     * 删除一个用户
+     *
+     * @param  id  入参
+     */
+    void delete(Long id);
+
+
     /**
      * 批量删除用户用户
      *
      * @param  ids  入参
      */
-    void delete(List<Long> ids);
+    void deleteSelectAll(List<Long> ids);
 
     /**
      * 从表格批量导入用户

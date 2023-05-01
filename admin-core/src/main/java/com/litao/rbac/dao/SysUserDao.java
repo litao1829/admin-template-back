@@ -17,8 +17,22 @@ import java.util.Map;
  */
 @Mapper
 public interface SysUserDao extends BaseDao<SysUserEntity> {
+
+    /**
+     * 根据用户名查找用户
+     * @Param username用户名
+     * @return SysUserEntity
+     * */
     default SysUserEntity getByUsername(String username){
         return this.selectOne(new QueryWrapper<SysUserEntity>().eq("username", username));
+    }
+
+    /**根据用户手机号查询用户
+     * @Param mobile手机号
+     * @return SysUserEntity
+     * */
+    default SysUserEntity getByMobile(String mobile){
+        return  this.selectOne(new QueryWrapper<SysUserEntity>().eq("mobile",mobile));
     }
 
     /**

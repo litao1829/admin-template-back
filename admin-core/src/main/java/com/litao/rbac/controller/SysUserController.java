@@ -103,6 +103,8 @@ public class SysUserController {
         if(StrUtil.isBlank(vo.getPassword())){
             Result.error("密码不能为空");
         }
+        //创建的用户状态初始化为1
+        vo.setStatus(1);
         //密码加密
         vo.setPassword(passwordEncoder.encode(vo.getPassword()));
         //保存
@@ -129,6 +131,33 @@ public class SysUserController {
         return Result.ok();
     }
 
+    @PostMapping("status")
+    @Operation(summary = "修改用户状态")
+    @PreAuthorize("hasAuthority('sys:user:update')")
+    public Result<String> updateStatus(@RequestParam Long id,@RequestParam Integer status){
+        sysUserService.updateStatus(id,status);
+        return Result.ok();
+    }
+
+    @DeleteMapping("{id}")
+    @Operation(summary = "删除用户")
+    @PreAuthorize("hasAuthority('sys:user:delete')")
+    public Result<String> delete(@PathVariable Long id) {
+        sysUserService.delete(id);
+        return Result.ok();
+    }
+
+    @PostMapping("deletemulti")
+    @Operation(summary = "批量删除用户")
+    @PreAuthorize("hasAuthority('sys:user:delete')")
+    public Result<String> delete(@RequestBody List<Long> ids) {
+        Long userId=SecurityUser.getUserId();
+        if(ids.contains(userId)){
+            return  Result.error("不能删除当前登录的用户");
+        }
+        sysUserService.deleteSelectAll(ids);
+        return Result.ok("删除成功");
+    }
 
     @PostMapping("import")
     @Operation(summary = "导入用户")

@@ -1,0 +1,3 @@
+2023-04-29 11:04:55.718 [http-nio-8080-exec-3] WARN  c.b.m.core.toolkit.support.ReflectLambdaMeta - Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @327514f
+2023-04-29 11:09:49.763 [http-nio-8080-exec-17] WARN  com.litao.rbac.service.impl.SysUserServiceImpl - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b52e029] Transaction not enabled
+2023-04-29 12:12:15.200 [MakuHikariCP housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - MakuHikariCP - Thread starvation or clock leap detected (housekeeper delta=20m19s852ms622µs800ns).

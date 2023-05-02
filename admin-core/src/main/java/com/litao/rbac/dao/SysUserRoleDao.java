@@ -15,5 +15,10 @@ import java.util.List;
  */
 @Mapper
 public interface SysUserRoleDao extends BaseDao<SysUserRoleEntity> {
+    /**
+     *角色ID列表
+     * @param id
+     * @return 返回角色ID列表
+     */
     List<Long> getRoleIdList(@Param("id")Long id);
 }

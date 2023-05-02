@@ -77,6 +77,8 @@ public class NoticeServiceImpl extends BaseServiceImpl<NoticeDao, NoticeEntity> 
     private Wrapper<NoticeEntity> getWrapper(NoticeQuery query) {
         LambdaQueryWrapper<NoticeEntity> wrapper = new LambdaQueryWrapper<>();
         wrapper.like(StrUtil.isNotBlank(query.getTitle()), NoticeEntity::getTitle, query.getTitle());
+        wrapper.like(StrUtil.isNotBlank(query.getContent()), NoticeEntity::getContent, query.getContent());
+
         return wrapper;
     }
 }

@@ -7,8 +7,10 @@ import com.litao.rbac.entity.SysRoleEntity;
 import com.litao.rbac.query.SysRoleQuery;
 import com.litao.rbac.service.SysRoleMenuService;
 import com.litao.rbac.service.SysRoleService;
+import com.litao.rbac.vo.SysMenuVO;
 import com.litao.rbac.vo.SysRoleVO;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
@@ -40,6 +42,8 @@ public class SysRoleController {
         return Result.ok(page);
     }
 
+
+
     @GetMapping("{id}")
     @Operation(summary = "角色信息")
     @PreAuthorize("hasAuthority('sys:role:info')")
@@ -50,6 +54,15 @@ public class SysRoleController {
         List<Long> menuIdList = sysRoleMenuService.getMenuIdList(id);
         role.setMenuIdList(menuIdList);
         return Result.ok(role);
+    }
+
+
+    @GetMapping("list")
+    @Operation(summary = "角色列表")
+    @PreAuthorize("hasAuthority('sys:role:page')")
+    public Result<List<SysRoleVO>> list() {
+        List<SysRoleVO> roleList = sysRoleService.getRoleList();
+        return Result.ok(roleList);
     }
 
     @PostMapping

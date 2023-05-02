@@ -3,13 +3,16 @@ package com.litao.rbac.controller;
 import cn.hutool.core.util.StrUtil;
 import com.litao.common.utils.PageResult;
 import com.litao.common.utils.Result;
+import com.litao.rbac.convert.SysRoleConvert;
 import com.litao.rbac.convert.SysUserConvert;
+import com.litao.rbac.entity.SysRoleEntity;
 import com.litao.rbac.entity.SysUserEntity;
 import com.litao.rbac.query.SysUserQuery;
 import com.litao.rbac.service.SysMenuService;
 import com.litao.rbac.service.SysUserRoleService;
 import com.litao.rbac.service.SysUserService;
 import com.litao.rbac.vo.SysAuthVO;
+import com.litao.rbac.vo.SysRoleVO;
 import com.litao.rbac.vo.SysUserPasswordVO;
 import com.litao.rbac.vo.SysUserVO;
 import com.litao.security.user.SecurityUser;
@@ -55,6 +58,8 @@ public class SysUserController {
         vo.setNav(sysMenuService.getUserMenuList(userDetail, 0));
         //3 获得用户授权信息
         vo.setAuthority(sysMenuService.getUserAuthority(userDetail));
+
+
         return Result.ok(vo);
     }
 
@@ -175,6 +180,15 @@ public class SysUserController {
     @PreAuthorize("hasAuthority('sys:user:export')")
     public void export(){
         sysUserService.export();
+    }
+
+
+    @PostMapping("/role/{userId}")
+    @Operation(summary = "分角色给用户")
+    @PreAuthorize("hasAuthority('sys:user:update')")
+    public Result<String> setRoleMenus(@PathVariable("userId") Long userId, @RequestBody List<Long> roleIds) {
+        sysUserService.setUserRole(userId, roleIds);
+        return Result.ok();
     }
 }
 

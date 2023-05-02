@@ -3,4 +3,7 @@
 
 <mapper namespace="com.litao.rbac.dao.SysRoleDao">
 
+    <select id="getRoleList" resultType="com.litao.rbac.entity.SysRoleEntity">
+        SELECT * FROM sys_role  where deleted = 0
+    </select>
 </mapper>

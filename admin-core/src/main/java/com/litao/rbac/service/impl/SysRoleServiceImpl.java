@@ -43,19 +43,17 @@ public class SysRoleServiceImpl extends BaseServiceImpl<SysRoleDao, SysRoleEntit
         return wrapper;
     }
 
-//    @Override
-//    public List<SysRoleVO> getList(SysRoleQuery query) {
-//        List<SysRoleEntity> list = baseMapper.selectList(getWrapper(query));
-//        return SysRoleConvert.INSTANCE.convertList(list);
-//    }
+    @Override
+    public List<SysRoleVO> getRoleList() {
+        List<SysRoleEntity> roleList = baseMapper.getRoleList();
+        return SysRoleConvert.INSTANCE.convertList(roleList);
+    }
 
     @Override
     @Transactional(rollbackFor = Exception.class)
     public void save(SysRoleVO vo) {
         SysRoleEntity sysRoleEntity = SysRoleConvert.INSTANCE.convert(vo);
         baseMapper.insert(sysRoleEntity);
-        //保存角色菜单关系
-//      sysRoleMenuService.saveOrUpdate(vo.getId(),vo.getMenuIdList());
     }
 
     @Override
@@ -63,8 +61,6 @@ public class SysRoleServiceImpl extends BaseServiceImpl<SysRoleDao, SysRoleEntit
     public void update(SysRoleVO vo) {
         SysRoleEntity sysRoleEntity = SysRoleConvert.INSTANCE.convert(vo);
         updateById(sysRoleEntity);
-        //保存角色菜单关系
-//        sysRoleMenuService.saveOrUpdate(vo.getId(),vo.getMenuIdList());
     }
 
     @Override
@@ -84,15 +80,4 @@ public class SysRoleServiceImpl extends BaseServiceImpl<SysRoleDao, SysRoleEntit
         sysRoleMenuService.saveOrUpdate(roleId,menuIds);
     }
 
-//    @Override
-//    @Transactional(rollbackFor = Exception.class)
-//    public void deleted(List<Long> idList) {
-//        //删除角色
-//        removeByIds(idList);
-//        //删除用户角色关系
-//        sysUserRoleService.deleteByRoleIdList(idList);
-//        //删除角色菜单关系
-//        sysRoleMenuService.deleteByRoleIdList(idList);
-//
-//    }
 }

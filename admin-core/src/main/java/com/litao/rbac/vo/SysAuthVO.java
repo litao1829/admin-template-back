@@ -26,4 +26,5 @@ public class SysAuthVO implements Serializable {
 
     @Schema(description = "用户导授权信息")
     private Set<String> authority;
+
 }

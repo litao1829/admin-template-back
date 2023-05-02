@@ -86,4 +86,11 @@ public interface SysUserService extends BaseService<SysUserEntity> {
      *
      */
     void export();
+
+    /**
+     * 给用户分配角色
+     * @param userId 用户id
+     * @param roleIds 角色id列表
+     */
+    void setUserRole(Long userId,List<Long> roleIds);
 }

@@ -18,6 +18,7 @@ import com.litao.rbac.dao.SysUserDao;
 import com.litao.rbac.entity.SysUserEntity;
 import com.litao.rbac.enums.SuperAdminEnum;
 import com.litao.rbac.query.SysUserQuery;
+import com.litao.rbac.service.SysUserRoleService;
 import com.litao.rbac.service.SysUserService;
 import com.litao.rbac.vo.SysUserExeclVO;
 import com.litao.rbac.vo.SysUserVO;
@@ -41,7 +42,7 @@ import java.util.Map;
 @Service
 @AllArgsConstructor
 public class SysUserServiceImpl extends BaseServiceImpl<SysUserDao, SysUserEntity> implements SysUserService {
-
+    private  final SysUserRoleService sysUserRoleService;
     @Override
     @Transactional(rollbackFor = Exception.class)
     public void updatePassword(Long id, String newPassword) {
@@ -128,12 +129,16 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUserDao, SysUserEntit
     @Override
     public void delete(Long id) {
         removeById(id);
+        //删除用户和角色之间的关系
+        sysUserRoleService.deleteByUserIdList(List.of(id));
     }
 
     @Override
     public void deleteSelectAll(List<Long> ids) {
         //批量删除用户
         removeByIds(ids);
+        //删除用户和角色之间的关系
+        sysUserRoleService.deleteByUserIdList(ids);
     }
 
     @Override
@@ -170,5 +175,11 @@ public class SysUserServiceImpl extends BaseServiceImpl<SysUserDao, SysUserEntit
         ExcelUtils.excelExport(SysUserExeclVO.class,"system_user_excel"+ DateUtils.format(new Date()),"sheet1",userExeclVOList);
 
     }
+
+    @Override
+    public void setUserRole(Long userId, List<Long> roleIds) {
+        sysUserRoleService.saveOrUpdate(userId,roleIds);
+    }
+
 
 }

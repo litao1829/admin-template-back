@@ -23,7 +23,7 @@ public interface SysRoleService extends BaseService<SysRoleEntity> {
     PageResult<SysRoleVO> page(SysRoleQuery query);
 
 
-//    List<SysRoleVO> getList(SysRoleQuery query);
+    List<SysRoleVO> getRoleList();
 
     /**
      * 新增角色
